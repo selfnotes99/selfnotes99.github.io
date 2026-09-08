@@ -5,15 +5,15 @@ import { Star } from "lucide-react";
 export const HeroTrustBadge: React.FC = () => {
   const avatars = [
     {
-      src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=120&auto=format&fit=crop",
+      src: "/images/avatars/avatar-1.jpg",
       alt: "Customer 1",
     },
     {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop",
+      src: "/images/avatars/avatar-2.jpg",
       alt: "Customer 2",
     },
     {
-      src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=120&auto=format&fit=crop",
+      src: "/images/avatars/avatar-3.jpg",
       alt: "Customer 3",
     },
   ];

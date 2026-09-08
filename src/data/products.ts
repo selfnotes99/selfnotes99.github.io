@@ -15,7 +15,7 @@ export const products: Product[] = [
     discount: "28% OFF",
     rating: 5,
     reviewCount: 128,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/urban-backpack-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
@@ -54,7 +54,7 @@ export const products: Product[] = [
     price: 39.99,
     rating: 5,
     reviewCount: 96,
-    image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/essential-hoodie-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
@@ -131,7 +131,7 @@ export const products: Product[] = [
     price: 24.99,
     rating: 5,
     reviewCount: 87,
-    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/polarized-sunglasses-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800&auto=format&fit=crop",
@@ -166,7 +166,7 @@ export const products: Product[] = [
     price: 69.99,
     rating: 5,
     reviewCount: 110,
-    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/minimal-watch-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop",
@@ -202,7 +202,7 @@ export const products: Product[] = [
     price: 19.99,
     rating: 5,
     reviewCount: 76,
-    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/scented-candle-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?q=80&w=800&auto=format&fit=crop",
@@ -241,7 +241,7 @@ export const products: Product[] = [
     discount: "23% OFF",
     rating: 4.9,
     reviewCount: 118,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/linen-summer-dress-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
@@ -303,7 +303,7 @@ export const products: Product[] = [
     price: 54.99,
     rating: 4.7,
     reviewCount: 68,
-    image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/chunky-knit-cardigan-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
@@ -335,7 +335,7 @@ export const products: Product[] = [
     discount: "25% OFF",
     rating: 5,
     reviewCount: 164,
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/leather-crossbody-bag-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
@@ -367,7 +367,7 @@ export const products: Product[] = [
     price: 119.99,
     rating: 4.9,
     reviewCount: 82,
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/luxury-tote-bag-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop",
@@ -397,7 +397,7 @@ export const products: Product[] = [
     discount: "22% OFF",
     rating: 4.9,
     reviewCount: 91,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/leather-weekend-duffle-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=800&auto=format&fit=crop",
@@ -485,7 +485,7 @@ export const products: Product[] = [
     discount: "21% OFF",
     rating: 4.8,
     reviewCount: 112,
-    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop",
+    image: "/images/products/retro-runner-sneakers-main.jpg",
     images: [
       "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop",

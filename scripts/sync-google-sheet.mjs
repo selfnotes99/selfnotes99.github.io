@@ -18,12 +18,14 @@ function normalizeImageUrl(url) {
     return clean;
   }
 
-  const driveFileMatch = clean.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+  // Google Drive format: https://drive.google.com/file/d/FILE_ID/view?usp=sharing
+  const driveFileMatch = clean.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/i);
   if (driveFileMatch && driveFileMatch[1]) {
     return `https://lh3.googleusercontent.com/d/${driveFileMatch[1]}`;
   }
 
-  const driveIdMatch = clean.match(/drive\.google\.com\/(?:open|uc)\?id=([a-zA-Z0-9_-]+)/);
+  // Google Drive format: open?id=FILE_ID or uc?id=FILE_ID or thumbnail?id=FILE_ID
+  const driveIdMatch = clean.match(/drive\.google\.com\/[^\s?#]*[?&]id=([a-zA-Z0-9_-]+)/i);
   if (driveIdMatch && driveIdMatch[1]) {
     return `https://lh3.googleusercontent.com/d/${driveIdMatch[1]}`;
   }
@@ -203,15 +205,41 @@ async function sync() {
           ];
 
       const images = [];
-      if (img1Idx >= 0 && getVal(img1Idx)) images.push(normalizeImageUrl(getVal(img1Idx)));
-      if (img2Idx >= 0 && getVal(img2Idx)) images.push(normalizeImageUrl(getVal(img2Idx)));
-      if (img3Idx >= 0 && getVal(img3Idx)) images.push(normalizeImageUrl(getVal(img3Idx)));
-      if (img4Idx >= 0 && getVal(img4Idx)) images.push(normalizeImageUrl(getVal(img4Idx)));
+
+      // Check for local compressed product images first
+      const mainLocalDisk = path.join(publicDir, "images", "products", `${slug}-main.jpg`);
+      if (fs.existsSync(mainLocalDisk)) {
+        images.push(`/images/products/${slug}-main.jpg`);
+      }
+      for (let k = 1; k <= 4; k++) {
+        const kLocalDisk = path.join(publicDir, "images", "products", `${slug}-${k}.jpg`);
+        const kRel = `/images/products/${slug}-${k}.jpg`;
+        if (fs.existsSync(kLocalDisk) && !images.includes(kRel)) {
+          images.push(kRel);
+        }
+      }
+
+      if (img1Idx >= 0 && getVal(img1Idx)) {
+        const u = normalizeImageUrl(getVal(img1Idx));
+        if (!images.includes(u)) images.push(u);
+      }
+      if (img2Idx >= 0 && getVal(img2Idx)) {
+        const u = normalizeImageUrl(getVal(img2Idx));
+        if (!images.includes(u)) images.push(u);
+      }
+      if (img3Idx >= 0 && getVal(img3Idx)) {
+        const u = normalizeImageUrl(getVal(img3Idx));
+        if (!images.includes(u)) images.push(u);
+      }
+      if (img4Idx >= 0 && getVal(img4Idx)) {
+        const u = normalizeImageUrl(getVal(img4Idx));
+        if (!images.includes(u)) images.push(u);
+      }
 
       if (images.length < 4 && imageIdx >= 0) {
         const combined = getVal(imageIdx);
         if (combined) {
-          const split = combined.split(/[,;\n\s]+/).map((s) => normalizeImageUrl(s.trim())).filter((s) => s.startsWith("http"));
+          const split = combined.split(/[,;\n\s]+/).map((s) => normalizeImageUrl(s.trim())).filter((s) => s.startsWith("http") || s.startsWith("/images/"));
           for (const s of split) {
             if (!images.includes(s)) images.push(s);
           }
@@ -221,11 +249,11 @@ async function sync() {
       const catFallbacks = CATEGORY_FALLBACK_IMAGES[categorySlug] || GLOBAL_DEFAULT_IMAGES;
       let fallbackIndex = 0;
       while (images.length < 4) {
-        const fallbackUrl = catFallbacks[fallbackIndex % catFallbacks.length];
+        const fallbackUrl = normalizeImageUrl(catFallbacks[fallbackIndex % catFallbacks.length]);
         if (!images.includes(fallbackUrl)) {
           images.push(fallbackUrl);
         } else {
-          images.push(GLOBAL_DEFAULT_IMAGES[fallbackIndex % GLOBAL_DEFAULT_IMAGES.length]);
+          images.push(normalizeImageUrl(GLOBAL_DEFAULT_IMAGES[fallbackIndex % GLOBAL_DEFAULT_IMAGES.length]));
         }
         fallbackIndex++;
       }

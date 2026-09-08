@@ -13,14 +13,18 @@ export function normalizeImageUrl(url: string): string {
   if (!url) return "";
   let clean = url.trim();
 
+  if (clean.startsWith("/images/")) {
+    return clean;
+  }
+
   // Google Drive format: https://drive.google.com/file/d/FILE_ID/view?usp=sharing
-  const driveFileMatch = clean.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+  const driveFileMatch = clean.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/i);
   if (driveFileMatch && driveFileMatch[1]) {
     return `https://lh3.googleusercontent.com/d/${driveFileMatch[1]}`;
   }
 
-  // Google Drive open?id=FILE_ID
-  const driveIdMatch = clean.match(/drive\.google\.com\/(?:open|uc)\?id=([a-zA-Z0-9_-]+)/);
+  // Google Drive format: open?id=FILE_ID or uc?id=FILE_ID or thumbnail?id=FILE_ID
+  const driveIdMatch = clean.match(/drive\.google\.com\/[^\s?#]*[?&]id=([a-zA-Z0-9_-]+)/i);
   if (driveIdMatch && driveIdMatch[1]) {
     return `https://lh3.googleusercontent.com/d/${driveIdMatch[1]}`;
   }
@@ -28,6 +32,19 @@ export function normalizeImageUrl(url: string): string {
   // Dropbox dl=0 to raw=1
   if (clean.includes("dropbox.com") && clean.includes("dl=0")) {
     return clean.replace("dl=0", "raw=1");
+  }
+
+  // Unsplash resolution optimization
+  if (clean.includes("images.unsplash.com")) {
+    try {
+      const u = new URL(clean);
+      u.searchParams.set("w", "400");
+      u.searchParams.set("q", "75");
+      u.searchParams.set("auto", "format");
+      return u.toString();
+    } catch {
+      return clean;
+    }
   }
 
   return clean;

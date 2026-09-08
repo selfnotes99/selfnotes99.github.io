@@ -260,7 +260,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Copyright */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#777777]">
-          <p>© 2025 ShopifyRetail. All rights reserved.</p>
+          <p>© 2025 Self Notes 99. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/shipping-policy" className="hover:underline">
               Privacy Policy

@@ -23,7 +23,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({ className = "", size = "md
     <Link
       href="/"
       className={`inline-flex items-center gap-2 group transition-transform active:scale-95 ${className}`}
-      aria-label="ShopifyRetail Home"
+      aria-label="Self Notes 99 Home"
     >
       {/* Original Green Shopping Bag Icon inspired by screenshot */}
       <div className={`relative flex items-center justify-center shrink-0 ${iconSizes[size]}`}>
@@ -62,10 +62,10 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({ className = "", size = "md
         </svg>
       </div>
 
-      {/* Brand Typography: Shopify in black, Retail in green */}
+      {/* Brand Typography: Self Notes in black, 99 in green */}
       <span className={`font-bold tracking-tight select-none flex items-center ${textSizes[size]}`}>
-        <span className="text-[#111111] font-extrabold">Shopify</span>
-        <span className="text-[#78B82A] font-extrabold">Retail</span>
+        <span className="text-[#111111] font-extrabold">Self Notes</span>
+        <span className="text-[#78B82A] font-extrabold ml-1.5">99</span>
       </span>
     </Link>
   );

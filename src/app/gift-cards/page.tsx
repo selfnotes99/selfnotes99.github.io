@@ -32,7 +32,7 @@ export default function GiftCardsPage() {
           The Gift of Choice
         </span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#111111] mt-3 mb-2">
-          ShopifyRetail Digital Gift Cards
+          Self Notes 99 Digital Gift Cards
         </h1>
         <p className="text-xs sm:text-sm text-gray-600">
           Delivered instantly via email with no expiration date or added fees. Perfect for any lifestyle celebration.
@@ -159,7 +159,7 @@ export default function GiftCardsPage() {
 
             <div className="flex items-center justify-between">
               <span className="text-base font-extrabold tracking-tight">
-                Shopify<span className="text-[#78B82A]">Retail</span>
+                Self Notes <span className="text-[#78B82A]">99</span>
               </span>
               <Sparkles className="w-5 h-5 text-[#78B82A]" />
             </div>

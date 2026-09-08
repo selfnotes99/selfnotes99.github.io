@@ -19,7 +19,7 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("shopifyretail_wishlist");
+      const saved = localStorage.getItem("selfnotes99_wishlist") || localStorage.getItem("shopifyretail_wishlist");
       if (saved) {
         setItems(JSON.parse(saved));
       }
@@ -32,7 +32,7 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (isHydrated) {
       try {
-        localStorage.setItem("shopifyretail_wishlist", JSON.stringify(items));
+        localStorage.setItem("selfnotes99_wishlist", JSON.stringify(items));
       } catch (e) {
         console.error("Failed to save wishlist to localStorage", e);
       }

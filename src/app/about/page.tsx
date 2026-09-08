@@ -40,7 +40,7 @@ export default function AboutPage() {
           Style Better. Live Better.
         </h1>
         <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Founded on the conviction that everyday objects should inspire tranquility and delight, ShopifyRetail curates elevated lifestyle essentials built to withstand the test of time.
+          Founded on the conviction that everyday objects should inspire tranquility and delight, Self Notes 99 curates elevated lifestyle essentials built to withstand the test of time.
         </p>
       </div>
 

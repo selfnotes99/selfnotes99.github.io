@@ -162,7 +162,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Email Concierge</p>
-                  <p className="text-gray-600">concierge@shopifyretail.com</p>
+                  <p className="text-gray-600">concierge@selfnotes99.com</p>
                   <p className="text-[11px] text-gray-400">Average reply: &lt; 2 hours</p>
                 </div>
               </div>

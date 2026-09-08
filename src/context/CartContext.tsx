@@ -58,7 +58,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   // Load from localStorage on client mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("shopifyretail_cart");
+      const saved = localStorage.getItem("selfnotes99_cart") || localStorage.getItem("shopifyretail_cart");
       if (saved) {
         setItems(JSON.parse(saved));
       }
@@ -72,7 +72,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (isHydrated) {
       try {
-        localStorage.setItem("shopifyretail_cart", JSON.stringify(items));
+        localStorage.setItem("selfnotes99_cart", JSON.stringify(items));
       } catch (e) {
         console.error("Failed to save cart to localStorage", e);
       }

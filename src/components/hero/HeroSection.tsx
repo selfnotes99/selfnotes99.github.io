@@ -158,7 +158,7 @@ export const HeroSection: React.FC = () => {
                         <span className="font-extrabold text-2xl text-white">S</span>
                       </div>
                       <span className="text-[9px] uppercase tracking-widest font-bold mt-2 text-[#78B82A]">
-                        ShopifyRetail
+                        Self Notes 99
                       </span>
                     </div>
                   </div>

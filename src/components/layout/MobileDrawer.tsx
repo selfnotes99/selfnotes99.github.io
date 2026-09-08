@@ -206,7 +206,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
           </div>
           <div className="flex items-center gap-2">
             <Mail className="w-3.5 h-3.5 text-[#064B35]" />
-            <span>concierge@shopifyretail.com</span>
+            <span>concierge@selfnotes99.com</span>
           </div>
         </div>
       </div>

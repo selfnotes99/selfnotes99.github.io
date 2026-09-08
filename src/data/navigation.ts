@@ -8,7 +8,6 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/shop", hasDropdown: true, dropdownType: "shop" },
-  { label: "Collections", href: "/collections", hasDropdown: true, dropdownType: "collections" },
   { label: "New Arrivals", href: "/new-arrivals" },
   { label: "Best Sellers", href: "/best-sellers" },
   { label: "Deals", href: "/deals" },

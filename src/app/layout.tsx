@@ -22,14 +22,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "ShopifyRetail — Style Better. Live Better.",
+  title: "Self Notes 99 — Style Better. Live Better.",
   description:
     "Discover premium products, handpicked for your lifestyle. Enjoy Free Shipping on orders $50+, 30-day easy returns, and 24/7 customer support.",
   openGraph: {
-    title: "ShopifyRetail — Style Better. Live Better.",
+    title: "Self Notes 99 — Style Better. Live Better.",
     description:
       "Your one-stop destination for quality lifestyle goods, fashion, footwear, and curated home essentials.",
-    siteName: "ShopifyRetail",
+    siteName: "Self Notes 99",
   },
 };
 

@@ -9,6 +9,12 @@ interface PageProps {
   params: { slug: string };
 }
 
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default function BlogPostPage({ params }: PageProps) {
   const post = blogPosts.find((b) => b.slug === params.slug);
 

@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { Product, BuyerNotification } from "@/types";
 import { products as fallbackProducts } from "@/data/products";
-import { GOOGLE_SHEET_ID, GOOGLE_SHEET_URL, FetchSheetResult } from "@/lib/googleSheet";
+import { GOOGLE_SHEET_ID, GOOGLE_SHEET_URL, FetchSheetResult, fetchProductsFromGoogleSheet } from "@/lib/googleSheet";
 
 interface ProductContextType {
   products: Product[];
@@ -48,11 +48,7 @@ export function ProductProvider({
     setError(undefined);
 
     try {
-      const endpoint = isRefresh ? "/api/products?refresh=true" : "/api/products";
-      const res = await fetch(endpoint);
-      if (!res.ok) throw new Error(`Failed with status ${res.status}`);
-      
-      const data: FetchSheetResult = await res.json();
+      const data: FetchSheetResult = await fetchProductsFromGoogleSheet(isRefresh);
       if (data.products && Array.isArray(data.products) && data.products.length > 0) {
         setProducts(data.products);
         setSource(data.source);

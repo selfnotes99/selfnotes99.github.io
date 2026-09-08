@@ -39,12 +39,12 @@ export const Header: React.FC = () => {
           isScrolled ? "shadow-sm" : ""
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-[64px] flex items-center justify-between">
+        <div className="max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-8 h-[64px] flex items-center justify-between">
           {/* Left: Mobile hamburger + Brand Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2 -ml-2 text-gray-700 hover:text-black rounded-lg hover:bg-gray-100 transition-colors"
+              className="lg:hidden p-1.5 sm:p-2 -ml-1 sm:-ml-2 text-gray-700 hover:text-black rounded-lg hover:bg-gray-100 transition-colors"
               aria-label="Open navigation menu"
             >
               <Menu className="w-5 h-5" />
@@ -56,7 +56,7 @@ export const Header: React.FC = () => {
           <NavigationMenu />
 
           {/* Right Action Icons: Search, User, Wishlist, Cart */}
-          <div className="flex items-center gap-4 sm:gap-5 text-[#111111]">
+          <div className="flex items-center gap-2.5 sm:gap-4 lg:gap-5 text-[#111111] shrink-0">
             {/* Search */}
             <button
               onClick={() => setSearchModalOpen(true)}

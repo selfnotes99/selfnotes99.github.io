@@ -8,15 +8,15 @@ interface BrandLogoProps {
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({ className = "", size = "md" }) => {
   const iconSizes = {
-    sm: "w-7 h-8",
-    md: "w-8 h-9",
-    lg: "w-10 h-11",
+    sm: "w-6 h-7 sm:w-7 sm:h-8",
+    md: "w-7 h-8 sm:w-8 sm:h-9",
+    lg: "w-9 h-10 sm:w-10 sm:h-11",
   };
 
   const textSizes = {
-    sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-3xl",
+    sm: "text-base sm:text-xl",
+    md: "text-lg sm:text-xl md:text-2xl",
+    lg: "text-2xl sm:text-3xl",
   };
 
   return (
@@ -63,9 +63,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({ className = "", size = "md
       </div>
 
       {/* Brand Typography: Self Notes in black, 99 in green */}
-      <span className={`font-bold tracking-tight select-none flex items-center ${textSizes[size]}`}>
+      <span className={`font-bold tracking-tight select-none flex items-center whitespace-nowrap shrink-0 ${textSizes[size]}`}>
         <span className="text-[#111111] font-extrabold">Self Notes</span>
-        <span className="text-[#78B82A] font-extrabold ml-1.5">99</span>
+        <span className="text-[#78B82A] font-extrabold ml-1 sm:ml-1.5">99</span>
       </span>
     </Link>
   );

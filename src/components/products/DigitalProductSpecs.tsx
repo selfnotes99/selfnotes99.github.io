@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   FileCheck,
   Zap,
@@ -17,7 +18,10 @@ import {
   Sparkles,
   HelpCircle,
   ChevronRight,
+  ChevronLeft,
   Layers,
+  Maximize2,
+  Eye,
 } from "lucide-react";
 import { Product } from "@/types";
 
@@ -29,6 +33,10 @@ type TabType = "contents" | "delivery" | "license" | "guarantee";
 
 export const DigitalProductSpecs: React.FC<DigitalProductSpecsProps> = ({ product }) => {
   const [activeTab, setActiveTab] = useState<TabType>("contents");
+  const [selectedFullImage, setSelectedFullImage] = useState<string | null>(null);
+
+  const galleryImages =
+    product.images && product.images.length > 0 ? product.images : [product.image];
 
   return (
     <section aria-label="Digital Product Details and Specifications" className="mb-16">
@@ -212,6 +220,59 @@ export const DigitalProductSpecs: React.FC<DigitalProductSpecsProps> = ({ produc
                 </div>
               </div>
             </div>
+
+            {/* Sample Images Showcase Gallery (50% Larger 4-Column Responsive Grid) */}
+            <div className="mt-8 pt-6 border-t border-gray-100">
+              <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-3 h-3 rounded-full bg-[#064B35]" />
+                  <h4 className="text-sm sm:text-base font-black uppercase tracking-wider text-gray-900 flex items-center gap-2.5">
+                    <span>Sample Images</span>
+                    <span className="text-xs font-bold text-[#064B35] bg-[#EAF4D5] px-2.5 py-0.5 rounded-full">
+                      {galleryImages.length} Photos
+                    </span>
+                  </h4>
+                </div>
+                <span className="text-xs text-gray-400 font-medium">
+                  Hover or tap with finger to view full image
+                </span>
+              </div>
+
+              {/* 4-Column Grid (50% larger than 6-column) */}
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-4">
+                {galleryImages.map((img, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => setSelectedFullImage(img)}
+                    className="group relative aspect-square rounded-2xl overflow-hidden bg-gray-100 border-2 border-gray-200/80 hover:border-[#064B35] cursor-pointer transition-all duration-300 shadow-xs hover:shadow-xl hover:-translate-y-1.5"
+                    title="Click or tap to view full image"
+                  >
+                    <Image
+                      src={img}
+                      alt={`${product.name} sample ${idx + 1}`}
+                      fill
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-115 group-active:scale-105"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    />
+
+                    {/* Hover / Touch Overlay */}
+                    <div className="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-200 flex flex-col items-center justify-center text-white p-3">
+                      <div className="w-10 h-10 rounded-full bg-white/25 backdrop-blur-sm flex items-center justify-center mb-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                        <Maximize2 className="w-5 h-5 text-white" />
+                      </div>
+                      <span className="text-xs font-black uppercase tracking-wider text-white">
+                        Full Image
+                      </span>
+                    </div>
+
+                    {/* Photo Index Badge */}
+                    <span className="absolute top-2.5 left-2.5 px-2 py-0.5 bg-black/65 backdrop-blur-xs text-white text-xs font-mono font-bold rounded-lg select-none">
+                      #{idx + 1}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         )}
 
@@ -355,6 +416,47 @@ export const DigitalProductSpecs: React.FC<DigitalProductSpecsProps> = ({ produc
           </span>
         </div>
       </div>
+
+      {/* Full Image Modal Lightbox on Click / Touch */}
+      {selectedFullImage && (
+        <div
+          onClick={() => setSelectedFullImage(null)}
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative max-w-5xl w-full flex flex-col items-center"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedFullImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-white bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all cursor-pointer z-50 flex items-center gap-1.5 text-xs font-bold px-3.5 shadow-lg"
+            >
+              <X className="w-4 h-4" />
+              <span>Close</span>
+            </button>
+
+            {/* Full High-Resolution Uncropped Image */}
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] max-h-[88vh] rounded-3xl overflow-hidden bg-black/60 border border-white/20 shadow-2xl flex items-center justify-center">
+              <Image
+                src={selectedFullImage}
+                alt="Full Sample Image"
+                fill
+                className="object-contain p-2 sm:p-4"
+                sizes="95vw"
+                priority
+              />
+            </div>
+
+            <div className="flex items-center justify-between w-full px-2 mt-3 text-white/90 text-xs">
+              <span className="font-bold truncate max-w-xs">{product.name}</span>
+              <span className="text-[11px] text-white/70 bg-white/10 px-2.5 py-1 rounded-full">
+                Full Resolution Sample Preview
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

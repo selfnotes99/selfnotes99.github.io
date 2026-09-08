@@ -8,7 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html,
 body {
+  overflow-x: hidden;
+  max-width: 100vw;
   color: rgb(var(--foreground-rgb));
   background: #FFFFFF;
   -webkit-font-smoothing: antialiased;

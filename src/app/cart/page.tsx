@@ -109,11 +109,11 @@ export default function CartPage() {
             {/* Items Card List */}
             <div className="bg-white rounded-2xl border border-gray-100 divide-y divide-gray-100 overflow-hidden shadow-xs">
               {items.map((item) => (
-                <div key={item.id} className="p-4 sm:p-5 flex gap-4 items-center">
+                <div key={item.id} className="p-3.5 sm:p-5 flex gap-3 sm:gap-4 items-center">
                   {/* Thumbnail */}
                   <Link
                     href={`/products/${item.product.slug}`}
-                    className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0"
+                    className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0"
                   >
                     <Image
                       src={item.product.image}

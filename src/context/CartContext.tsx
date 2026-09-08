@@ -23,30 +23,8 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// Initial 3 items to match the badge '3' from the reference screenshot
-const INITIAL_DEMO_ITEMS: CartItem[] = [
-  {
-    id: "prod-1-default",
-    product: products[0], // Urban Backpack ($49.99)
-    quantity: 1,
-    selectedColor: "Olive Green",
-    selectedSize: "One Size",
-  },
-  {
-    id: "prod-2-default",
-    product: products[1], // Essential Hoodie ($39.99)
-    quantity: 1,
-    selectedColor: "Forest Green",
-    selectedSize: "M",
-  },
-  {
-    id: "prod-3-default",
-    product: products[2], // Premium Sneakers ($59.99)
-    quantity: 1,
-    selectedColor: "Crisp White / Green",
-    selectedSize: "US 9",
-  },
-];
+// Empty initial items
+const INITIAL_DEMO_ITEMS: CartItem[] = [];
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<CartItem[]>(INITIAL_DEMO_ITEMS);

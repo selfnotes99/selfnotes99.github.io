@@ -89,19 +89,13 @@ export const Header: React.FC = () => {
               )}
             </Link>
 
-            {/* Cart with Green Badge '3' matching screenshot */}
-            <button
-              onClick={() => setIsCartOpen(true)}
-              className="relative p-1.5 rounded-full hover:bg-gray-100 hover:text-[#064B35] transition-colors"
-              aria-label="Shopping Cart"
+            {/* Shopping Bag Icon (Static, no badge, click does nothing) */}
+            <div
+              className="relative p-1.5 select-none cursor-default text-[#111111]"
+              aria-label="Shopping Bag"
             >
               <ShoppingBag className="w-5 h-5 stroke-[1.75]" />
-              {totalCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 min-w-[17px] h-[17px] px-1 bg-[#78B82A] text-white text-[10px] font-extrabold rounded-full flex items-center justify-center leading-none shadow-xs">
-                  {totalCount}
-                </span>
-              )}
-            </button>
+            </div>
           </div>
         </div>
       </header>

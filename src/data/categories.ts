@@ -1,0 +1,60 @@
+import { Category } from "@/types";
+
+export const categories: Category[] = [
+  {
+    id: "cat-1",
+    slug: "womens-fashion",
+    name: "Women's Fashion",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+    icon: "dress",
+    count: 48,
+  },
+  {
+    id: "cat-2",
+    slug: "mens-fashion",
+    name: "Men's Fashion",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+    icon: "shirt",
+    count: 36,
+  },
+  {
+    id: "cat-3",
+    slug: "footwear",
+    name: "Footwear",
+    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop",
+    icon: "sneakers",
+    count: 24,
+  },
+  {
+    id: "cat-4",
+    slug: "bags-luggage",
+    name: "Bags & Luggage",
+    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
+    icon: "bag",
+    count: 32,
+  },
+  {
+    id: "cat-5",
+    slug: "accessories",
+    name: "Accessories",
+    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop",
+    icon: "glasses",
+    count: 40,
+  },
+  {
+    id: "cat-6",
+    slug: "home-living",
+    name: "Home & Living",
+    image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=800&auto=format&fit=crop",
+    icon: "home",
+    count: 28,
+  },
+  {
+    id: "cat-7",
+    slug: "deals-offers",
+    name: "Deals & Offers",
+    image: "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?q=80&w=800&auto=format&fit=crop",
+    icon: "percent",
+    count: 55,
+  },
+];

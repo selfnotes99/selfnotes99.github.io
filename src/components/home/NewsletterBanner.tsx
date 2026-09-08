@@ -2,15 +2,18 @@
 
 import React, { useState } from "react";
 import { Mail, Gift, CheckCircle2 } from "lucide-react";
+import { useProducts } from "@/context/ProductContext";
 
 export const NewsletterBanner: React.FC = () => {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const { refreshProducts } = useProducts();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim() || !email.includes("@")) return;
     setSubscribed(true);
+    refreshProducts().catch((err) => console.warn("Live sync on newsletter banner:", err));
     setTimeout(() => {
       setEmail("");
       setSubscribed(false);

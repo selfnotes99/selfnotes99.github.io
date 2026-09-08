@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { Product, BuyerNotification } from "@/types";
 import { products as fallbackProducts } from "@/data/products";
 import { GOOGLE_SHEET_ID, GOOGLE_SHEET_URL, FetchSheetResult, fetchProductsFromGoogleSheet } from "@/lib/googleSheet";
+import cachedSheetData from "@/data/googleSheetData.json";
 
 interface ProductContextType {
   products: Product[];
@@ -30,13 +31,23 @@ export function ProductProvider({
   children: React.ReactNode;
   initialProducts?: Product[];
 }) {
-  const [products, setProducts] = useState<Product[]>(initialProducts || fallbackProducts);
-  const [recentBuyers, setRecentBuyers] = useState<BuyerNotification[]>([]);
+  const initialDataProducts =
+    cachedSheetData?.products && cachedSheetData.products.length > 0
+      ? (cachedSheetData.products as unknown as Product[])
+      : fallbackProducts;
+
+  const initialDataBuyers =
+    cachedSheetData?.recentBuyers && cachedSheetData.recentBuyers.length > 0
+      ? (cachedSheetData.recentBuyers as unknown as BuyerNotification[])
+      : [];
+
+  const [products, setProducts] = useState<Product[]>(initialProducts || initialDataProducts);
+  const [recentBuyers, setRecentBuyers] = useState<BuyerNotification[]>(initialDataBuyers);
   const [loading, setLoading] = useState(false);
   const [isSyncing, setIsSyncing] = useState(false);
-  const [source, setSource] = useState<"google_sheet" | "default_fallback">("default_fallback");
+  const [source, setSource] = useState<"google_sheet" | "default_fallback">("google_sheet");
   const [rowCount, setRowCount] = useState(products.length);
-  const [lastSynced, setLastSynced] = useState<string>(new Date().toISOString());
+  const [lastSynced, setLastSynced] = useState<string>(cachedSheetData?.lastSynced || new Date().toISOString());
   const [error, setError] = useState<string | undefined>(undefined);
 
   const fetchProducts = useCallback(async (isRefresh = false) => {

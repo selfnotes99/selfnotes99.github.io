@@ -2,17 +2,20 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Truck, RotateCcw, Check } from "lucide-react";
+import { Truck, RotateCcw, Check, RefreshCw } from "lucide-react";
 import { BrandLogo } from "@/components/ui/BrandLogo";
+import { useProducts } from "@/context/ProductContext";
 
 export const Footer: React.FC = () => {
   const [footerEmail, setFooterEmail] = useState("");
   const [footerSubscribed, setFooterSubscribed] = useState(false);
+  const { refreshProducts, isSyncing } = useProducts();
 
   const handleFooterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!footerEmail.trim() || !footerEmail.includes("@")) return;
     setFooterSubscribed(true);
+    refreshProducts().catch((err) => console.warn("Live sync on subscribe:", err));
     setTimeout(() => {
       setFooterEmail("");
       setFooterSubscribed(false);

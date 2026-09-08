@@ -1,13 +1,13 @@
 import React from "react";
 import { products } from "@/data/products";
-import { fetchProductsFromGoogleSheet } from "@/lib/googleSheet";
+import cachedSheetData from "@/data/googleSheetData.json";
 import ProductDetailClient from "./ProductDetailClient";
 
 interface PageProps {
   params: { slug: string };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const slugs = new Set<string>();
 
   // Include all fallback products
@@ -15,16 +15,11 @@ export async function generateStaticParams() {
     if (p.slug) slugs.add(p.slug);
   });
 
-  // Also include any live products from Google Sheets
-  try {
-    const sheetData = await fetchProductsFromGoogleSheet();
-    if (sheetData?.products) {
-      sheetData.products.forEach((p) => {
-        if (p.slug) slugs.add(p.slug);
-      });
-    }
-  } catch (e) {
-    // Graceful fallback to static product list
+  // Include all synced Google Sheet products
+  if (cachedSheetData?.products && Array.isArray(cachedSheetData.products)) {
+    cachedSheetData.products.forEach((p: any) => {
+      if (p.slug) slugs.add(p.slug);
+    });
   }
 
   return Array.from(slugs).map((slug) => ({

@@ -141,7 +141,7 @@ export const HeroSection: React.FC = () => {
                   {/* Potted plant in background left */}
                   <div className="absolute top-2 left-6 sm:left-10 w-24 h-32 sm:w-28 sm:h-36 z-0 opacity-90 transition-transform duration-700 hover:scale-105">
                     <Image
-                      src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=400&auto=format&fit=crop"
+                      src="/images/hero/plant.jpg"
                       alt="Succulent Indoor Houseplant"
                       fill
                       className="object-contain"
@@ -166,7 +166,7 @@ export const HeroSection: React.FC = () => {
                   {/* Tan/Beige luxury handbag right */}
                   <div className="absolute top-8 sm:top-6 right-8 sm:right-14 w-32 sm:w-40 h-32 sm:h-40 z-10 transition-transform duration-700 hover:scale-105 drop-shadow-md">
                     <Image
-                      src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=500&auto=format&fit=crop"
+                      src="/images/hero/handbag.jpg"
                       alt="Luxury Tan Handbag"
                       fill
                       className="object-contain"
@@ -176,7 +176,7 @@ export const HeroSection: React.FC = () => {
                   {/* Crisp white sneakers with green accents in foreground */}
                   <div className="absolute bottom-2 left-16 sm:left-24 w-36 sm:w-48 h-28 sm:h-36 z-20 transition-transform duration-700 hover:scale-105 drop-shadow-lg">
                     <Image
-                      src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600&auto=format&fit=crop"
+                      src="/images/hero/sneakers.jpg"
                       alt="Crisp White Leather Sneakers"
                       fill
                       className="object-contain"
@@ -186,7 +186,7 @@ export const HeroSection: React.FC = () => {
                   {/* Folded ribbed olive sweater */}
                   <div className="absolute bottom-3 right-28 sm:right-36 w-28 sm:w-36 h-18 sm:h-22 z-15 transition-transform duration-700 hover:scale-105 drop-shadow-sm">
                     <Image
-                      src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=400&auto=format&fit=crop"
+                      src="/images/hero/sweater.jpg"
                       alt="Ribbed Olive Knit Sweater"
                       fill
                       className="object-contain"
@@ -196,7 +196,7 @@ export const HeroSection: React.FC = () => {
                   {/* Tortoiseshell sunglasses in front */}
                   <div className="absolute bottom-1 right-20 sm:right-28 w-16 sm:w-20 h-10 sm:h-12 z-25 drop-shadow-md">
                     <Image
-                      src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=300&auto=format&fit=crop"
+                      src="/images/hero/sunglasses.jpg"
                       alt="Tortoiseshell Sunglasses"
                       fill
                       className="object-contain"

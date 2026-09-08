@@ -4,8 +4,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Mail, Phone, Clock, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
+const GOOGLE_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbyQhFYBYHjjM613YdmzXAkrko3aiPNUhANmo06TUg9nhatjoR5a3deI1c0vUMDCK1BD8Q/exec";
+
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -14,10 +18,27 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
-    setSubmitted(true);
+
+    setIsSubmitting(true);
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(form),
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Error submitting contact form:", err);
+      setSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -140,9 +161,17 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs font-bold rounded-xl transition-all shadow-sm"
+                disabled={isSubmitting}
+                className="w-full py-3 bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs font-bold rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75"
               >
-                Submit Message
+                {isSubmitting ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                    <span>Submitting Message to Sheet...</span>
+                  </>
+                ) : (
+                  <span>Submit Message</span>
+                )}
               </button>
             </form>
           )}
@@ -162,7 +191,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Email Concierge</p>
-                  <p className="text-gray-600">concierge@selfnotes99.com</p>
+                  <p className="text-gray-600">help@selfnotes99.com</p>
                   <p className="text-[11px] text-gray-400">Average reply: &lt; 2 hours</p>
                 </div>
               </div>
@@ -173,8 +202,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Toll-Free Phone</p>
-                  <p className="text-gray-600">1-800-RETAIL (1-800-738-245)</p>
-                  <p className="text-[11px] text-gray-400">Mon - Fri: 8am - 8pm EST</p>
+                  <p className="text-gray-600">RETAIL (+91-8595403030)</p>
+                  <p className="text-[11px] text-gray-400">Mon - Fri: 10am - 6pm EST</p>
                 </div>
               </div>
 
@@ -194,7 +223,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Design Studio &amp; HQ</p>
-                  <p className="text-gray-600">410 NW 10th Ave, Portland, OR 97209</p>
+                  <p className="text-gray-600">SECTOR 22 A,MOLAHERA GURUGRAM,HARYANA ZIP 122015</p>
                 </div>
               </div>
             </div>

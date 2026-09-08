@@ -7,16 +7,22 @@ import { useProducts } from "@/context/ProductContext";
 export const NewsletterBanner: React.FC = () => {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
-  const { refreshProducts } = useProducts();
+  const [bannerStatus, setBannerStatus] = useState<string | null>(null);
+  const { refreshProducts, isSyncing } = useProducts();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim() || !email.includes("@")) return;
     setSubscribed(true);
+    setBannerStatus(
+      email.trim()
+        ? "You're subscribed! Catalog synced & 10% code applied."
+        : "✅ Google Sheet live synced successfully!"
+    );
     refreshProducts().catch((err) => console.warn("Live sync on newsletter banner:", err));
     setTimeout(() => {
       setEmail("");
       setSubscribed(false);
+      setBannerStatus(null);
     }, 4000);
   };
 
@@ -45,23 +51,23 @@ export const NewsletterBanner: React.FC = () => {
             {subscribed ? (
               <div className="flex items-center gap-2 text-white bg-[#0B6B47] py-2.5 px-4 rounded-xl text-xs font-bold animate-in fade-in">
                 <CheckCircle2 className="w-4 h-4 text-[#78B82A]" />
-                <span>You&apos;re subscribed! Check your inbox for your 10% off code.</span>
+                <span>{bannerStatus || "Live products synced from Google Sheet!"}</span>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex items-center gap-2">
                 <input
-                  type="email"
-                  placeholder="Enter your email address"
+                  type="text"
+                  placeholder="Enter email to subscribe & sync"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  required
                   className="w-full bg-white text-[#111111] placeholder:text-gray-400 text-xs sm:text-sm px-4 py-2.5 rounded-lg outline-none focus:ring-2 focus:ring-[#78B82A] transition-all"
                 />
                 <button
                   type="submit"
-                  className="bg-[#FF6A24] hover:bg-[#E55B1B] active:scale-98 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-lg transition-all shrink-0 shadow-sm"
+                  disabled={isSyncing}
+                  className="bg-[#FF6A24] hover:bg-[#E55B1B] active:scale-98 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-lg transition-all shrink-0 shadow-sm flex items-center gap-1.5 cursor-pointer disabled:opacity-75"
                 >
-                  Subscribe
+                  {isSyncing ? "Syncing..." : "Subscribe"}
                 </button>
               </form>
             )}

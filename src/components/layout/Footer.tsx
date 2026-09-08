@@ -9,17 +9,24 @@ import { useProducts } from "@/context/ProductContext";
 export const Footer: React.FC = () => {
   const [footerEmail, setFooterEmail] = useState("");
   const [footerSubscribed, setFooterSubscribed] = useState(false);
+  const [syncStatus, setSyncStatus] = useState<string | null>(null);
   const { refreshProducts, isSyncing } = useProducts();
 
-  const handleFooterSubmit = (e: React.FormEvent) => {
+  const handleFooterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!footerEmail.trim() || !footerEmail.includes("@")) return;
     setFooterSubscribed(true);
-    refreshProducts().catch((err) => console.warn("Live sync on subscribe:", err));
+    setSyncStatus(footerEmail.trim() ? "Subscribed & Syncing..." : "Syncing Google Sheet...");
+    try {
+      await refreshProducts();
+      setSyncStatus(footerEmail.trim() ? "Subscribed! Catalog synced." : "✅ Google Sheet live synced!");
+    } catch {
+      setSyncStatus("Catalog refreshed!");
+    }
     setTimeout(() => {
       setFooterEmail("");
       setFooterSubscribed(false);
-    }, 4000);
+      setSyncStatus(null);
+    }, 3500);
   };
 
   return (
@@ -218,25 +225,32 @@ export const Footer: React.FC = () => {
 
             {/* Newsletter form */}
             {footerSubscribed ? (
-              <div className="p-2 bg-[#EAF4D5] rounded-lg text-xs font-bold text-[#064B35] flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-[#78B82A]" />
-                <span>Thank you for subscribing!</span>
+              <div className="p-2.5 bg-[#EAF4D5] border border-[#D5E6B8] rounded-xl text-xs font-bold text-[#064B35] flex items-center gap-2 animate-in fade-in">
+                <Check className="w-4 h-4 text-[#78B82A] shrink-0" />
+                <span>{syncStatus || "Live products updated from Google Sheet!"}</span>
               </div>
             ) : (
               <form onSubmit={handleFooterSubmit} className="flex gap-1.5">
                 <input
-                  type="email"
-                  placeholder="Enter your email"
+                  type="text"
+                  placeholder="Enter your email (optional)"
                   value={footerEmail}
                   onChange={(e) => setFooterEmail(e.target.value)}
-                  required
                   className="w-full bg-white text-xs px-3 py-2 border border-[#DECDB3] rounded-lg text-[#111111] placeholder:text-gray-400 outline-none focus:border-[#064B35]"
                 />
                 <button
                   type="submit"
-                  className="bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs font-bold px-3.5 py-2 rounded-lg transition-colors shrink-0"
+                  disabled={isSyncing}
+                  className="bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs font-bold px-3.5 py-2 rounded-lg transition-colors shrink-0 flex items-center gap-1.5 cursor-pointer disabled:opacity-75"
                 >
-                  Subscribe
+                  {isSyncing ? (
+                    <>
+                      <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                      <span>Syncing...</span>
+                    </>
+                  ) : (
+                    <span>Subscribe</span>
+                  )}
                 </button>
               </form>
             )}

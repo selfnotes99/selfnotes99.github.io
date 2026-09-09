@@ -54,14 +54,14 @@ export const DigitalProductCountdown: React.FC<DigitalProductCountdownProps> = (
 
   return (
     <div className="bg-gradient-to-r from-[#FFF5F2] via-[#FFF9EF] to-[#F2F8EE] border border-[#FFD9CC] rounded-2xl p-4 sm:p-5 shadow-xs select-none">
-      {/* Top row: Live viewers & urgency pill */}
-      <div className="flex flex-wrap items-center justify-between gap-2 mb-3 pb-3 border-b border-[#F0E5D8]">
-        <div className="flex items-center gap-2">
+      {/* Top row: Live viewers & urgency pill (Centered on mobile) */}
+      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2 mb-3 pb-3 border-b border-[#F0E5D8] text-center sm:text-left">
+        <div className="flex items-center justify-center gap-2">
           <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#F4512A]"></span>
           </span>
-          <span className="text-xs font-bold text-gray-800 flex items-center gap-1.5">
+          <span className="text-xs font-bold text-gray-800 flex items-center justify-center gap-1.5">
             <Users className="w-3.5 h-3.5 text-[#F4512A]" />
             <strong className="text-[#F4512A] font-extrabold">{activeViewers} people</strong> are viewing this right now
           </span>
@@ -73,20 +73,20 @@ export const DigitalProductCountdown: React.FC<DigitalProductCountdownProps> = (
         </span>
       </div>
 
-      {/* Countdown Row */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div>
-          <div className="flex items-center gap-1.5 text-xs font-bold text-gray-900">
+      {/* Countdown Row (Centered on mobile) */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+        <div className="flex flex-col items-center sm:items-start">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs font-bold text-gray-900">
             <Clock className="w-4 h-4 text-[#F4512A] animate-pulse" />
             <span>Special Promotional Pricing Ends In:</span>
           </div>
-          <p className="text-[11px] text-gray-500 mt-0.5">
+          <p className="text-[11px] text-gray-500 mt-0.5 text-center sm:text-left">
             Regular price restores when countdown reaches zero.
           </p>
         </div>
 
-        {/* Digital Clocks */}
-        <div className="flex items-center gap-1.5">
+        {/* Digital Clocks (Centered on mobile) */}
+        <div className="flex items-center justify-center gap-1.5">
           {/* Hours */}
           <div className="flex flex-col items-center">
             <div className="w-11 h-11 rounded-xl bg-[#111111] text-white font-mono font-black text-base flex items-center justify-center shadow-sm">

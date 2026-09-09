@@ -36,7 +36,18 @@ export const DigitalStickyMobileBar: React.FC<DigitalStickyMobileBarProps> = ({
   if (!isVisible) return null;
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-gray-200 px-3 py-2.5 shadow-[0_-8px_25px_rgba(0,0,0,0.12)] animate-slideUp">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-gray-200 px-3 pt-2 pb-2.5 shadow-[0_-8px_25px_rgba(0,0,0,0.12)] animate-slideUp">
+      {/* Micro Trust Header */}
+      <div className="flex items-center justify-between text-[10px] font-bold text-gray-500 pb-1.5 mb-1.5 border-b border-gray-100">
+        <span className="flex items-center gap-1 text-[#064B35]">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#78B82A] animate-pulse" />
+          Instant Download Ready
+        </span>
+        <span className="text-gray-400">
+          ⚡ UPI / GPay / Cards Accepted
+        </span>
+      </div>
+
       <div className="flex items-center gap-2.5">
         {/* Thumbnail & Price Info */}
         <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-gray-100 shrink-0 border border-gray-200">

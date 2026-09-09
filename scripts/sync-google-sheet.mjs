@@ -123,7 +123,20 @@ async function sync() {
     }));
 
     const findCol = (keys) => {
-      const found = colLabels.find((c) => keys.some((k) => c.label.includes(k)));
+      // 1. Exact match first
+      const exact = colLabels.find((c) => keys.some((k) => c.label === k));
+      if (exact) return exact.index;
+
+      // 2. Safe boundary/phrase match (prevents short words like "toc" matching "stock")
+      const found = colLabels.find((c) =>
+        keys.some((k) => {
+          if (k.length <= 4) {
+            const regex = new RegExp(`(^|[\\s_-])${k}([\\s_-]|$)`, "i");
+            return regex.test(c.label);
+          }
+          return c.label.includes(k);
+        })
+      );
       return found ? found.index : -1;
     };
 
@@ -141,6 +154,18 @@ async function sync() {
     const sizesIdx = findCol(["size", "sizes"]);
     const colorsIdx = findCol(["color", "colors"]);
     const linkIdx = findCol(["link", "checkout", "buy_url", "url", "affiliate", "payment_link", "direct_link"]);
+    const tocIdx = findCol([
+      "table of contents",
+      "table_of_contents",
+      "tableofcontents",
+      "table of content",
+      "syllabus",
+      "curriculum",
+      "chapters",
+      "chapter list",
+      "modules",
+      "toc",
+    ]);
     const buyerNameIdx = findCol(["buyer name", "buyer", "customer name", "customer", "buyer_name", "client"]);
     const buyerLocIdx = findCol(["buyer location", "buyer city", "location", "city", "state", "country"]);
     const buyerTimeIdx = findCol(["buyer time", "time ago", "purchased time", "time", "buyer_time"]);
@@ -290,6 +315,18 @@ async function sync() {
           ? `https://${linkRaw.trim()}`
           : undefined;
 
+      const tocRaw = getVal(tocIdx);
+      let tableOfContents = undefined;
+      if (tocRaw && tocRaw.trim().length > 0 && !/^\d+$/.test(tocRaw.trim())) {
+        const splitItems = tocRaw
+          .split(/[\r\n|;]+/)
+          .map((s) => s.trim())
+          .filter((s) => s.length > 0 && !/^\d+$/.test(s));
+        if (splitItems.length > 0) {
+          tableOfContents = splitItems;
+        }
+      }
+
       const buyerName = getVal(buyerNameIdx);
       const buyerLoc = getVal(buyerLocIdx);
       const buyerTime = getVal(buyerTimeIdx);
@@ -333,6 +370,7 @@ async function sync() {
         isSale: Boolean(oldPrice || badge === "Sale"),
         featuredOrder: rIdx + 1,
         link,
+        tableOfContents,
         buyer,
       });
     });

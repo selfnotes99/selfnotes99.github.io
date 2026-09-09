@@ -32,6 +32,11 @@ import { ProductCard } from "@/components/products/ProductCard";
 import { DigitalProductCountdown } from "@/components/products/DigitalProductCountdown";
 import { DigitalStickyMobileBar } from "@/components/products/DigitalStickyMobileBar";
 import { DigitalProductSpecs } from "@/components/products/DigitalProductSpecs";
+import { ProductTableOfContents } from "@/components/products/ProductTableOfContents";
+import { VerifiedCustomerReviews } from "@/components/products/VerifiedCustomerReviews";
+import { PaymentTrustBadges } from "@/components/products/PaymentTrustBadges";
+import { ProductFAQ } from "@/components/products/ProductFAQ";
+import { WhyBuyComparison } from "@/components/products/WhyBuyComparison";
 
 interface PageProps {
   params: { slug: string };
@@ -289,6 +294,21 @@ export default function ProductDetailClient({ params }: PageProps) {
                 </span>
               </div>
 
+              {/* Live Real-time Social Urgency Strip */}
+              <div className="flex items-center flex-wrap gap-2 text-[11px] font-bold bg-[#FAFDF8] border border-[#D5E6B8] text-gray-700 px-3 py-1.5 rounded-xl select-none">
+                <span className="flex items-center gap-1.5 text-[#F4512A]">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F4512A] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F4512A]"></span>
+                  </span>
+                  🔥 18 people viewing right now
+                </span>
+                <span className="text-gray-300 hidden sm:inline">•</span>
+                <span className="text-gray-600 flex items-center gap-1">
+                  ⚡ 84+ copies downloaded today
+                </span>
+              </div>
+
               {/* Pricing Row */}
               <div className="flex items-baseline gap-3 py-2">
                 <span className="text-3xl sm:text-4xl font-black text-[#111111]">
@@ -313,7 +333,7 @@ export default function ProductDetailClient({ params }: PageProps) {
               />
 
               {/* Short Description */}
-              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pt-1">
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pt-1 text-center sm:text-left">
                 {product.description}
               </p>
 
@@ -434,13 +454,8 @@ export default function ProductDetailClient({ params }: PageProps) {
                   </button>
                 </div>
 
-                {/* Safe & Secure Subtext */}
-                <div className="text-center pt-1">
-                  <p className="text-[11px] text-gray-500 flex items-center justify-center gap-1.5 font-medium">
-                    <Lock className="w-3.5 h-3.5 text-gray-400" />
-                    <span>256-Bit SSL Encrypted Checkout • Instant Download Link • 30-Day Guarantee</span>
-                  </p>
-                </div>
+                {/* High-Trust Indian Payment Badges & WhatsApp Support */}
+                <PaymentTrustBadges product={product} />
               </div>
 
               {/* Digital Deliverables Checklist Card */}
@@ -496,79 +511,20 @@ export default function ProductDetailClient({ params }: PageProps) {
           </div>
         </div>
 
+        {/* Complete Table of Contents / Syllabus (from Google Sheet) */}
+        <ProductTableOfContents product={product} />
+
+        {/* Why Buy from selfnotes99 vs Free Internet Notes Comparison */}
+        <WhyBuyComparison product={product} />
+
         {/* Modern & Mobile-Engaging Digital Product Details & Specifications */}
         <DigitalProductSpecs product={product} />
 
-        {/* Customer Reviews Section */}
-        <div className="bg-white rounded-3xl border border-gray-200/80 p-6 sm:p-10 mb-16 shadow-xs">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-6 border-b border-gray-200">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-black text-gray-900">
-                Verified Customer Reviews
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-500 mt-1">
-                Real feedback from verified purchasers of {product.name}
-              </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="text-3xl font-black text-gray-900">{product.rating}.0</div>
-              <div>
-                <div className="flex items-center text-[#F5A623]">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#F5A623] text-[#F5A623]" />
-                  ))}
-                </div>
-                <span className="text-[11px] text-gray-500 font-bold">
-                  Based on {product.reviewCount} reviews
-                </span>
-              </div>
-            </div>
-          </div>
+        {/* Verified Customer Reviews / Testimonials matching reference image */}
+        <VerifiedCustomerReviews product={product} className="mb-12" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
-            <div className="bg-[#FAFDF8] rounded-2xl p-5 border border-gray-100 space-y-3">
-              <div className="flex items-center gap-1 text-[#F5A623]">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-[#F5A623] text-[#F5A623]" />
-                ))}
-              </div>
-              <p className="text-xs text-gray-700 leading-relaxed font-medium">
-                &ldquo;Instant download link worked immediately! High-res photos and materials are top notch. Worth every rupee.&rdquo;
-              </p>
-              <div className="text-[11px] text-gray-500 font-bold">
-                Rahul M. • <span className="text-[#064B35]">Verified Purchase</span>
-              </div>
-            </div>
-
-            <div className="bg-[#FAFDF8] rounded-2xl p-5 border border-gray-100 space-y-3">
-              <div className="flex items-center gap-1 text-[#F5A623]">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-[#F5A623] text-[#F5A623]" />
-                ))}
-              </div>
-              <p className="text-xs text-gray-700 leading-relaxed font-medium">
-                &ldquo;The Google Sheet integration works flawlessly and the instant checkout button opens the direct payment gateway. Amazing UX!&rdquo;
-              </p>
-              <div className="text-[11px] text-gray-500 font-bold">
-                Ananya S. • <span className="text-[#064B35]">Verified Purchase</span>
-              </div>
-            </div>
-
-            <div className="bg-[#FAFDF8] rounded-2xl p-5 border border-gray-100 space-y-3">
-              <div className="flex items-center gap-1 text-[#F5A623]">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-[#F5A623] text-[#F5A623]" />
-                ))}
-              </div>
-              <p className="text-xs text-gray-700 leading-relaxed font-medium">
-                &ldquo;Smooth, mobile-friendly design. Sticky bottom bar makes purchasing on smartphone super easy.&rdquo;
-              </p>
-              <div className="text-[11px] text-gray-500 font-bold">
-                Dev K. • <span className="text-[#064B35]">Verified Purchase</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Frequently Asked Questions (FAQ) Accordion */}
+        <ProductFAQ product={product} />
 
         {/* Related Products */}
         {related.length > 0 && (

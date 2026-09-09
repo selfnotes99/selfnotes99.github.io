@@ -53,9 +53,14 @@ export function ProductProvider({
   const fetchProducts = useCallback(async (isRefresh = false) => {
     if (isRefresh) {
       setIsSyncing(true);
-    } else {
-      setLoading(true);
     }
+    // Only set loading to true if there are no cached products at all
+    setProducts((prev) => {
+      if (!prev || prev.length === 0) {
+        setLoading(true);
+      }
+      return prev;
+    });
     setError(undefined);
 
     try {

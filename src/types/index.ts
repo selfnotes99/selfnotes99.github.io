@@ -30,6 +30,7 @@ export interface Product {
   isSale?: boolean;
   featuredOrder?: number;
   link?: string; // Direct checkout/instant download/payment link from Google Sheet
+  tableOfContents?: string[]; // Table of Contents / Syllabus chapters from Google Sheet
   buyer?: BuyerNotification;
 }
 

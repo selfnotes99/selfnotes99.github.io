@@ -42,6 +42,13 @@ export const products: Product[] = [
     isSale: true,
     isBestSeller: true,
     featuredOrder: 1,
+    tableOfContents: [
+      "Chapter 01: Foundations & Core Architecture (18 Pages)",
+      "Chapter 02: Practical Step-by-Step Implementation Blueprint (35 Pages)",
+      "Chapter 03: 50+ Real-World Case Studies & Industry Breakdown (42 Pages)",
+      "Chapter 04: Master Cheat Sheets, Formulas & Visual Summaries (25 Pages)",
+      "Chapter 05: Resource Toolkit, Checklists & Action Roadmap (15 Pages)",
+    ],
   },
   {
     id: "prod-2",

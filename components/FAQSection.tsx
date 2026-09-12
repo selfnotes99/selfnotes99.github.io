@@ -65,8 +65,8 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ edition }) => {
           <div className="lg:col-span-5 flex justify-center lg:justify-end items-end relative">
             <div className="relative w-full max-w-[420px] aspect-[7/9] sm:aspect-[3/4]">
               <Image
-                src="/assets/faq_student.png"
-                alt="Student recommending study kit"
+                src="/assets/faq_student.webp"
+                alt="Student smiling with study notes"
                 fill
                 className="object-contain object-bottom"
               />

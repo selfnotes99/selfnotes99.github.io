@@ -78,8 +78,8 @@ export const ComboOffer: React.FC<ComboOfferProps> = ({ edition }) => {
                 </div>
                 <div className="relative w-full aspect-[1568/2400] rounded-lg overflow-hidden bg-neutral-50 shadow-inner">
                   <Image
-                    src="/assets/sql/06_inner_join_match.png"
-                    alt="Complete original handwritten INNER JOIN note sheet"
+                    src="/assets/sql/06_inner_join_match.webp"
+                    alt="INNER JOIN and SQL Joins notes sheet"
                     fill
                     className="object-contain object-top transition-transform duration-300 group-hover:scale-105"
                     sizes="(max-width: 768px) 95vw, 420px"

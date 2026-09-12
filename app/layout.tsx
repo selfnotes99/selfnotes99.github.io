@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "SQL Mastery",
     images: [
       {
-        url: "https://selfnotes99.github.io/assets/sql/02_sql_sublanguages.png",
+        url: "https://selfnotes99.github.io/assets/sql/02_sql_sublanguages.webp",
         width: 800,
         height: 600,
         alt: "SQL Made Simple 2026 Complete Ebook - Visual Notes & Queries"
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Practical SQL Notes 2026 | Master Databases & Queries",
     description: "Complete 16-Unit Practical SQL Study Kit with Hand-Drawn Notes & Diagrams at ₹99.",
-    images: ["https://selfnotes99.github.io/assets/sql/02_sql_sublanguages.png"]
+    images: ["https://selfnotes99.github.io/assets/sql/02_sql_sublanguages.webp"]
   },
   robots: {
     index: true,
@@ -99,7 +99,7 @@ export default function RootLayout({
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "SQL Made Simple 2026 – The Practical Beginner's Guide",
-      "image": "https://selfnotes99.github.io/assets/sql/02_sql_sublanguages.png",
+      "image": "https://selfnotes99.github.io/assets/sql/02_sql_sublanguages.webp",
       "description": "Complete 16-Unit Practical SQL Study Kit including smart visual notes, ER diagrams, JOIN Venn diagrams, constraints, and solved queries.",
       "brand": {
         "@type": "Brand",

@@ -18,7 +18,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 1: What is SQL?',
       badge: 'UNIT 1 • FOUNDATIONS',
       sub: 'The Language of Databases, RDBMS Architecture & History',
-      image: '/assets/sql/01_what_is_sql.png',
+      image: '/assets/sql/01_what_is_sql.webp',
       bullets: [
         'Declarative vs Imperative: Why you tell SQL "what to get", not how',
         'Codd\'s Relational Model (1970) & the birth of SEQUEL at IBM',
@@ -32,7 +32,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 4: DDL, DML & DAL',
       badge: 'UNIT 4 • CRITICAL EXAM TOPIC',
       sub: 'The Language Within a Language: SQL Sublanguages',
-      image: '/assets/sql/02_sql_sublanguages.png',
+      image: '/assets/sql/02_sql_sublanguages.webp',
       bullets: [
         'Data Definition Language (DDL): CREATE, ALTER, DROP, TRUNCATE with Schema Blueprint',
         'Data Manipulation Language (DML): Complete CRUD process (INSERT, SELECT, UPDATE, DELETE)',
@@ -46,7 +46,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 7: Constraints & Keys',
       badge: 'UNIT 7 • DATA INTEGRITY',
       sub: 'Core Concepts & Constraints: Primary, Foreign & Unique Keys',
-      image: '/assets/sql/03_core_concepts_constraints.png',
+      image: '/assets/sql/03_core_concepts_constraints.webp',
       bullets: [
         'PRIMARY KEY vs FOREIGN KEY: Referential integrity rules explained visually',
         'Handling NULL values: Difference between NULL, 0, and an empty string',
@@ -60,7 +60,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 5 & 10: Query Processing',
       badge: 'UNIT 5 & 10 • QUERY EXECUTION',
       sub: 'Logical Query Processing Order & SELECT Anatomy',
-      image: '/assets/sql/04_query_processing_select.png',
+      image: '/assets/sql/04_query_processing_select.webp',
       bullets: [
         'Exact order database engines process queries: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY',
         'Why column aliases defined in SELECT cannot be used in WHERE clauses',
@@ -74,7 +74,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 14: SQL Joins Family',
       badge: 'UNIT 14 • RELATIONAL JOINS',
       sub: 'What Are SQL Joins? The Complete Join Family Tree',
-      image: '/assets/sql/05_sql_joins_concept.png',
+      image: '/assets/sql/05_sql_joins_concept.webp',
       bullets: [
         'Fundamental concept: Why normalization requires joining related tables',
         'The ON search condition: Equality tests between FK and PK (Equi-Join)',
@@ -88,7 +88,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 14: INNER JOIN',
       badge: 'UNIT 14 • MATCHING RECORDS',
       sub: 'INNER JOIN: The Perfect Match & The Party Metaphor',
-      image: '/assets/sql/06_inner_join_match.png',
+      image: '/assets/sql/06_inner_join_match.webp',
       bullets: [
         'The Party Metaphor: Only guests invited to BOTH parties can enter!',
         'Step-by-step row comparison mechanism across two tables',
@@ -102,7 +102,7 @@ export const SampleShowcaseSection: React.FC<SampleShowcaseSectionProps> = ({ on
       title: 'Unit 14: LEFT OUTER JOIN',
       badge: 'UNIT 14 • NULL HANDLING',
       sub: 'LEFT OUTER JOIN: Anti-Join Pattern & Preserving Left Table',
-      image: '/assets/sql/07_left_outer_join.png',
+      image: '/assets/sql/07_left_outer_join.webp',
       bullets: [
         'Preserving every single row from Table 1, regardless of matches in Table 2',
         'Automatic NULL padding for missing values in Table 2',

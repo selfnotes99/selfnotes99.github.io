@@ -38,7 +38,7 @@ export const ProductOffer: React.FC<ProductOfferProps> = ({
                 </div>
                 <div className="relative w-full aspect-[1568/2400] rounded-lg overflow-hidden bg-neutral-50 shadow-inner">
                   <Image
-                    src="/assets/sql/05_sql_joins_concept.png"
+                    src="/assets/sql/05_sql_joins_concept.webp"
                     alt="Complete original handwritten SQL Joins note sheet"
                     fill
                     className="object-contain object-top transition-transform duration-300 group-hover:scale-105"

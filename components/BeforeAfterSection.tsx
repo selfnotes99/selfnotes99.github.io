@@ -26,7 +26,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({ edition 
           <div className="relative flex flex-col items-center">
             <div className="relative w-full max-w-[420px] aspect-square rounded-xl overflow-hidden border-4 border-[#1F1714] shadow-2xl bg-neutral-100">
               <Image
-                src="/assets/before_photo.png"
+                src="/assets/before_photo.webp"
                 alt="Student before using study notes"
                 fill
                 className="object-cover"
@@ -53,7 +53,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({ edition 
           <div className="relative flex flex-col items-center">
             <div className="relative w-full max-w-[420px] aspect-square rounded-xl overflow-hidden border-4 border-[#1F1714] shadow-2xl bg-neutral-100">
               <Image
-                src="/assets/after_photo.png"
+                src="/assets/after_photo.webp"
                 alt="Student after using study notes"
                 fill
                 className="object-cover"

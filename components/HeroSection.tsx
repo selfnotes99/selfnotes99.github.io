@@ -126,7 +126,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 {/* Complete Uncut Original Image from images folder */}
                 <div className="relative w-full aspect-[1568/2400] rounded-lg overflow-hidden bg-neutral-50 shadow-inner">
                   <Image
-                    src="/assets/sql/02_sql_sublanguages.png"
+                    src="/assets/sql/02_sql_sublanguages.webp"
                     alt="Original SQL Sublanguages handwritten notes (DDL, DML, DAL)"
                     fill
                     className="object-contain object-top transition-transform duration-500 group-hover:scale-105"

@@ -41,7 +41,7 @@ export const TrustSection: React.FC<TrustSectionProps> = ({ edition }) => {
         <div className="relative rounded-3xl overflow-hidden shadow-xl mb-[-48px] sm:mb-[-60px] z-10 border border-[#E2BEA2]/60">
           <div className="relative w-full aspect-[16/7] sm:aspect-[16/6] bg-[#EBB561]">
             <Image
-              src="/assets/trust_banner.png"
+              src="/assets/trust_banner.webp"
               alt="Happy students and study strategy banner"
               fill
               className="object-cover"

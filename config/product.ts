@@ -363,7 +363,7 @@ export const PRODUCT_CONFIG = {
       ],
       heroCtaText: 'Get SQL Ebook',
       heroSecondaryText: '16 Core Units • Instant Digital Access • 2026 Edition',
-      heroImage: '/assets/sql_hero_books.png',
+      heroImage: '/assets/sql_hero_books.webp',
       tickerText: 'LIMITED OFFER: Master Practical SQL with 16 Core Units at Just ₹99 | Instant PDF Download | 2026 Edition',
 
       offerSectionTitle: 'PRACTICAL SQL EBOOK – 2026 EDITION',
@@ -380,7 +380,7 @@ export const PRODUCT_CONFIG = {
         'Lifetime Access & Free 2026 Edition Updates',
         'Mobile, Tablet, Laptop & Printable Format'
       ],
-      offerImage: '/assets/sql_product_box.png',
+      offerImage: '/assets/sql_product_box.webp',
       ctaText: 'Buy Now (₹99)',
 
       urgencyTitle: 'One Small Investment Today.',
@@ -395,7 +395,7 @@ export const PRODUCT_CONFIG = {
         'Trusted by College Students, BCA/BTech & Data Aspirants'
       ],
       urgencyBadgeText: 'COMPLETE 16-UNIT PRACTICAL SQL EBOOK AT JUST ₹99!',
-      urgencyImage: '/assets/urgency_visual.png',
+      urgencyImage: '/assets/urgency_visual.webp',
 
       whyNeedTitle: 'Why You Need This SQL Ebook?',
       whyCards: [
@@ -638,12 +638,12 @@ export const PRODUCT_CONFIG = {
   },
 
   sqlSamples: [
-    { title: 'Unit 1: What is SQL? The Language of Databases', image: '/assets/sql/01_what_is_sql.png' },
-    { title: 'Unit 4: The Language Within a Language (DDL, DML, DAL)', image: '/assets/sql/02_sql_sublanguages.png' },
-    { title: 'Unit 7: Core Concepts & Constraints (PRIMARY/FOREIGN KEY)', image: '/assets/sql/03_core_concepts_constraints.png' },
-    { title: 'Unit 5 & 10: How SQL Queries Are Processed & SELECT Anatomy', image: '/assets/sql/04_query_processing_select.png' },
-    { title: 'Unit 14: What Are SQL Joins? (The Join Family Tree)', image: '/assets/sql/05_sql_joins_concept.png' },
-    { title: 'Unit 14: INNER JOIN (The Perfect Match & Party Metaphor)', image: '/assets/sql/06_inner_join_match.png' },
-    { title: 'Unit 14: LEFT OUTER JOIN (Anti-Join Pattern & NULL Handling)', image: '/assets/sql/07_left_outer_join.png' }
+    { title: 'Unit 1: What is SQL? The Language of Databases', image: '/assets/sql/01_what_is_sql.webp' },
+    { title: 'Unit 4: The Language Within a Language (DDL, DML, DAL)', image: '/assets/sql/02_sql_sublanguages.webp' },
+    { title: 'Unit 7: Core Concepts & Constraints (PRIMARY/FOREIGN KEY)', image: '/assets/sql/03_core_concepts_constraints.webp' },
+    { title: 'Unit 5 & 10: How SQL Queries Are Processed & SELECT Anatomy', image: '/assets/sql/04_query_processing_select.webp' },
+    { title: 'Unit 14: What Are SQL Joins? (The Join Family Tree)', image: '/assets/sql/05_sql_joins_concept.webp' },
+    { title: 'Unit 14: INNER JOIN (The Perfect Match & Party Metaphor)', image: '/assets/sql/06_inner_join_match.webp' },
+    { title: 'Unit 14: LEFT OUTER JOIN (Anti-Join Pattern & NULL Handling)', image: '/assets/sql/07_left_outer_join.webp' }
   ]
 };

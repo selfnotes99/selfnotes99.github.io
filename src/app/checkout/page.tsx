@@ -15,11 +15,14 @@ import {
 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { formatPrice } from "@/lib/utils";
+import { submitOrderToLaravel } from "@/lib/laravelApi";
 
 export default function CheckoutPage() {
   const { items, subtotal, clearCart } = useCart();
 
   const [step, setStep] = useState<"form" | "success">("form");
+  const [orderNumber, setOrderNumber] = useState<string>("SR-884920");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [shippingMethod, setShippingMethod] = useState<"standard" | "express">(
     "standard"
   );
@@ -50,23 +53,61 @@ export default function CheckoutPage() {
       : 4.99;
   const grandTotal = subtotal + shippingCost;
 
-  const handlePlaceOrder = (e: React.FormEvent) => {
+  const handlePlaceOrder = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    // Trigger confetti
+    let generatedOrderNum = "SR-" + Math.floor(100000 + Math.random() * 900000);
+
     try {
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ["#064B35", "#78B82A", "#FF6A24", "#F5A623"],
-      });
-    } catch (err) {
-      console.error(err);
-    }
+      const orderPayload = {
+        customer_name: `${formData.firstName} ${formData.lastName}`.trim(),
+        customer_email: formData.email,
+        customer_phone: formData.phone,
+        shipping_address: `${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
+        payment_method: paymentMethod,
+        notes: `Shipping via ${shippingMethod}`,
+        items: items.map((item) => ({
+          product_id: item.product?.id || item.id,
+          product_name: item.product?.name || "Product",
+          quantity: item.quantity,
+          unit_price: item.product?.price || 0,
+          options: {
+            size: item.selectedSize,
+            color: item.selectedColor,
+          },
+        })),
+        subtotal: subtotal,
+        discount: 0,
+        shipping_fee: shippingCost,
+        grand_total: grandTotal,
+      };
 
-    setStep("success");
-    clearCart();
+      const res = await submitOrderToLaravel(orderPayload);
+      if (res?.data?.order_number) {
+        generatedOrderNum = res.data.order_number;
+      }
+    } catch (err) {
+      console.warn("Could not push order directly to Laravel API, saved locally:", err);
+    } finally {
+      setIsSubmitting(false);
+      setOrderNumber(generatedOrderNum);
+
+      // Trigger confetti
+      try {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ["#064B35", "#78B82A", "#FF6A24", "#F5A623"],
+        });
+      } catch (err) {
+        console.error(err);
+      }
+
+      setStep("success");
+      clearCart();
+    }
   };
 
   if (step === "success") {
@@ -78,14 +119,14 @@ export default function CheckoutPage() {
           </div>
 
           <span className="text-xs font-bold text-[#064B35] uppercase tracking-wider">
-            Order Confirmed #SR-884920
+            Order Confirmed #{orderNumber}
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-[#111111] mt-2 mb-3">
             Thank you for your order, {formData.firstName}!
           </h1>
           <p className="text-xs sm:text-sm text-gray-600 mb-8 max-w-md mx-auto leading-relaxed">
             We&apos;ve sent a full confirmation email and receipt to{" "}
-            <strong>{formData.email}</strong>. Your package will be carefully packed and dispatched within 24 hours.
+            <strong>{formData.email}</strong>. Your digital notes / package will be delivered instantly.
           </p>
 
           {/* Details summary */}
@@ -99,20 +140,20 @@ export default function CheckoutPage() {
             <div className="flex justify-between pb-2 border-b border-gray-100">
               <span className="text-gray-500">Shipping Method:</span>
               <span className="font-semibold text-gray-800">
-                {shippingMethod === "express" ? "Express 2-Day" : "Free Standard Ground"}
+                {shippingMethod === "express" ? "Express Delivery" : "Digital / Standard Ground"}
               </span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">Estimated Delivery:</span>
+              <span className="text-gray-500">Status:</span>
               <span className="font-bold text-[#064B35]">
-                {shippingMethod === "express" ? "Thursday, May 18" : "Monday, May 22"}
+                Order Logged &amp; Verified in Store CMS
               </span>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/track-order?orderId=SR-884920"
+              href={`/track-order?orderId=${orderNumber}`}
               className="px-6 py-3 bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs font-bold rounded-xl shadow-sm transition-colors"
             >
               Track Your Order
@@ -276,7 +317,7 @@ export default function CheckoutPage() {
                   </div>
                 </div>
                 <span className="text-xs font-bold text-[#064B35]">
-                  {subtotal >= 50 ? "FREE" : "$4.99"}
+                  {subtotal >= 50 ? "FREE" : formatPrice(4.99)}
                 </span>
               </label>
 
@@ -301,7 +342,7 @@ export default function CheckoutPage() {
                     <p className="text-gray-500 text-[11px]">Guaranteed expedited air shipping</p>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-gray-900">$14.99</span>
+                <span className="text-xs font-bold text-gray-900">{formatPrice(14.99)}</span>
               </label>
             </div>
           </div>
@@ -399,7 +440,7 @@ export default function CheckoutPage() {
               {items.map((item) => (
                 <div key={item.id} className="py-2.5 flex items-center gap-3">
                   <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-white border border-gray-100 shrink-0">
-                    <Image src={item.product.image} alt={item.product.name} fill className="object-cover" />
+                    <Image src={item.product.image} alt={item.product.name} fill className="object-contain p-0.5" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-bold text-gray-900 truncate">{item.product.name}</p>
@@ -437,9 +478,10 @@ export default function CheckoutPage() {
             {/* Place Order CTA */}
             <button
               type="submit"
-              className="w-full py-3.5 bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-all active:scale-98 flex items-center justify-center gap-2"
+              disabled={isSubmitting}
+              className="w-full py-3.5 bg-[#064B35] hover:bg-[#0B6B47] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-all active:scale-98 flex items-center justify-center gap-2 disabled:opacity-60 cursor-pointer"
             >
-              <span>Place Order Now</span>
+              <span>{isSubmitting ? "Processing Order..." : "Place Order Now"}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 

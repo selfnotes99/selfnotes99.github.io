@@ -25,7 +25,7 @@ export const BenefitsStrip: React.FC = () => {
         </svg>
       ),
       title: "Fast & Free Shipping",
-      description: "On orders $50+",
+      description: "On orders Rs 50+",
     },
     {
       icon: (

@@ -22,14 +22,14 @@ export default function ShippingPolicyPage() {
           <Truck className="w-6 h-6 text-[#064B35] mb-2" />
           <h3 className="font-bold text-sm text-gray-900">Free Standard Shipping</h3>
           <p className="text-xs text-gray-500 mt-1">
-            Complimentary on all US domestic orders over $50. Arrives in 3–5 business days.
+            Complimentary on all domestic orders over Rs 50. Arrives in 3–5 business days.
           </p>
         </div>
         <div className="bg-[#FFFDF8] rounded-2xl p-5 border border-[#EDE4D5]">
           <Clock className="w-6 h-6 text-[#064B35] mb-2" />
           <h3 className="font-bold text-sm text-gray-900">Express 2-Day Air</h3>
           <p className="text-xs text-gray-500 mt-1">
-            Expedited dispatch via air for $14.99 flat. Orders placed before 1 PM EST ship same day.
+            Expedited dispatch via air for Rs 14.99 flat. Orders placed before 1 PM EST ship same day.
           </p>
         </div>
         <div className="bg-[#FFFDF8] rounded-2xl p-5 border border-[#EDE4D5]">
@@ -67,19 +67,19 @@ export default function ShippingPolicyPage() {
               </thead>
               <tbody className="divide-y divide-gray-100 text-xs">
                 <tr>
-                  <td className="p-3 font-semibold">Standard Ground (Orders $50+)</td>
+                  <td className="p-3 font-semibold">Standard Ground (Orders Rs 50+)</td>
                   <td className="p-3 text-gray-600">3–5 Business Days</td>
                   <td className="p-3 font-bold text-[#064B35]">FREE</td>
                 </tr>
                 <tr>
-                  <td className="p-3 font-semibold">Standard Ground (Orders &lt; $50)</td>
+                  <td className="p-3 font-semibold">Standard Ground (Orders &lt; Rs 50)</td>
                   <td className="p-3 text-gray-600">3–5 Business Days</td>
-                  <td className="p-3">$4.99</td>
+                  <td className="p-3">Rs 4.99</td>
                 </tr>
                 <tr>
                   <td className="p-3 font-semibold">Priority Express</td>
                   <td className="p-3 text-gray-600">2 Business Days</td>
-                  <td className="p-3">$14.99</td>
+                  <td className="p-3">Rs 14.99</td>
                 </tr>
               </tbody>
             </table>

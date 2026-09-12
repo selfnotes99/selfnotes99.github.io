@@ -110,7 +110,7 @@ export const HeroSection: React.FC = () => {
                 <Truck className="w-4 h-4 text-[#064B35] shrink-0" />
                 <div className="leading-tight">
                   <p className="text-[11px] font-bold text-[#111111]">Free Shipping</p>
-                  <p className="text-[10px] text-gray-500 font-medium hidden sm:block">On Orders $50+</p>
+                  <p className="text-[10px] text-gray-500 font-medium hidden sm:block">On Orders Rs 50+</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">

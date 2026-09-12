@@ -60,7 +60,7 @@ export const NavigationMenu: React.FC = () => {
                       </Link>
                     ))}
                     <div className="col-span-2 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px]">
-                      <span className="text-gray-500">Free delivery on orders over $50</span>
+                      <span className="text-gray-500">Free delivery on orders over Rs 50</span>
                       <Link
                         href="/shop"
                         onClick={() => setActiveDropdown(null)}

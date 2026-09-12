@@ -4,7 +4,7 @@ export const faqs: FAQItem[] = [
   {
     id: "faq-1",
     question: "What is your shipping policy and delivery timeframe?",
-    answer: "We offer Free Standard Shipping on all US orders over $50. Standard domestic delivery typically takes 3 to 5 business days. Express 2-day delivery is available at checkout for $14.99. International shipments arrive in 6 to 12 business days depending on customs clearance.",
+    answer: "We offer Free Standard Shipping on all orders over Rs 50. Standard domestic delivery typically takes 3 to 5 business days. Express 2-day delivery is available at checkout for Rs 14.99. International shipments arrive in 6 to 12 business days depending on customs clearance.",
     category: "Shipping",
   },
   {

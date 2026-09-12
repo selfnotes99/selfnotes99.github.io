@@ -110,7 +110,7 @@ export const CartDrawer: React.FC = () => {
                     src={item.product.image}
                     alt={item.product.name}
                     fill
-                    className="object-cover"
+                    className="object-contain p-1 bg-white"
                   />
                 </div>
                 <div className="flex-1 min-w-0 flex flex-col justify-between">

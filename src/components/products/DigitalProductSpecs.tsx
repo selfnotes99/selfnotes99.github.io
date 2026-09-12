@@ -244,14 +244,14 @@ export const DigitalProductSpecs: React.FC<DigitalProductSpecsProps> = ({ produc
                   <div
                     key={idx}
                     onClick={() => setSelectedFullImage(img)}
-                    className="group relative aspect-square rounded-2xl overflow-hidden bg-gray-100 border-2 border-gray-200/80 hover:border-[#064B35] cursor-pointer transition-all duration-300 shadow-xs hover:shadow-xl hover:-translate-y-1.5"
+                    className="group relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-white border-2 border-gray-200/80 hover:border-[#064B35] cursor-pointer transition-all duration-300 shadow-xs hover:shadow-xl hover:-translate-y-1.5 p-1.5"
                     title="Click or tap to view full image"
                   >
                     <Image
                       src={img}
                       alt={`${product.name} sample ${idx + 1}`}
                       fill
-                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-115 group-active:scale-105"
+                      className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     />
 
@@ -437,12 +437,12 @@ export const DigitalProductSpecs: React.FC<DigitalProductSpecsProps> = ({ produc
             </button>
 
             {/* Full High-Resolution Uncropped Image */}
-            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] max-h-[88vh] rounded-3xl overflow-hidden bg-black/60 border border-white/20 shadow-2xl flex items-center justify-center">
+            <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] max-h-[88vh] rounded-3xl overflow-hidden bg-black/90 border border-white/20 shadow-2xl flex items-center justify-center p-2">
               <Image
                 src={selectedFullImage}
                 alt="Full Sample Image"
                 fill
-                className="object-contain p-2 sm:p-4"
+                className="object-contain"
                 sizes="95vw"
                 priority
               />

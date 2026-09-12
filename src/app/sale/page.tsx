@@ -1,42 +1,24 @@
-"use client";
-
 import React from "react";
-import { useProducts } from "@/context/ProductContext";
-import { ProductCard } from "@/components/products/ProductCard";
-import Link from "next/link";
+import type { Metadata } from "next";
+import SaleClient from "./SaleClient";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://selfnotes99.com";
+
+export const metadata: Metadata = {
+  title: "CBSE Notes on Sale — Discounted Bundles & Special Offers",
+  description:
+    "Save big on combined CBSE Class 10 & 12 notes bundles, chapter packages, and topper exam preparation kits on Self Notes 99.",
+  alternates: {
+    canonical: `${SITE_URL}/sale`,
+  },
+  openGraph: {
+    title: "CBSE Study Notes on Sale | Self Notes 99",
+    description:
+      "Discounted student packs and board exam revision materials with instant download access.",
+    url: `${SITE_URL}/sale`,
+  },
+};
 
 export default function SalePage() {
-  const { products } = useProducts();
-  const saleItems = products.filter((p) => p.isSale || p.oldPrice || p.badge === "Sale");
-
-  return (
-    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="bg-[#FFF5E5] rounded-2xl p-8 sm:p-12 text-center mb-10 border border-[#FFD9B3]">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#F4512A] bg-white px-3 py-1 rounded-full shadow-xs">
-          Clearance Event
-        </span>
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-[#111111] mt-3 mb-2">
-          Seasonal Sale &amp; Special Offers
-        </h1>
-        <p className="text-xs sm:text-sm text-gray-600 max-w-md mx-auto">
-          Save on our finest selection of past-season colors, limited editions, and bundled lifestyle staples.
-        </p>
-      </div>
-
-      <div className="flex items-center justify-between mb-6">
-        <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">
-          {saleItems.length} Products on Sale
-        </span>
-        <Link href="/shop" className="text-xs font-bold text-[#064B35] hover:underline">
-          View Full Catalog →
-        </Link>
-      </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-        {saleItems.map((p) => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
-    </div>
-  );
+  return <SaleClient />;
 }

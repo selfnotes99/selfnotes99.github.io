@@ -3,8 +3,11 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { Product, BuyerNotification } from "@/types";
 import { products as fallbackProducts } from "@/data/products";
-import { GOOGLE_SHEET_ID, GOOGLE_SHEET_URL, FetchSheetResult, fetchProductsFromGoogleSheet } from "@/lib/googleSheet";
-import cachedSheetData from "@/data/googleSheetData.json";
+import {
+  API_BASE_URL,
+  fetchProductsFromLaravel,
+  FetchProductsResult,
+} from "@/lib/laravelApi";
 
 interface ProductContextType {
   products: Product[];
@@ -13,10 +16,12 @@ interface ProductContextType {
   getProductBySlug: (slug: string) => Product | undefined;
   loading: boolean;
   isSyncing: boolean;
-  source: "google_sheet" | "default_fallback";
+  source: "laravel_api" | "local_cache" | "default_fallback";
   rowCount: number;
-  sheetId: string;
-  sheetUrl: string;
+  apiUrl: string;
+  adminUrl: string;
+  sheetId?: string;
+  sheetUrl?: string;
   lastSynced: string;
   error?: string;
   refreshProducts: () => Promise<void>;
@@ -31,30 +36,25 @@ export function ProductProvider({
   children: React.ReactNode;
   initialProducts?: Product[];
 }) {
-  const initialDataProducts =
-    cachedSheetData?.products && cachedSheetData.products.length > 0
-      ? (cachedSheetData.products as unknown as Product[])
-      : fallbackProducts;
-
-  const initialDataBuyers =
-    cachedSheetData?.recentBuyers && cachedSheetData.recentBuyers.length > 0
-      ? (cachedSheetData.recentBuyers as unknown as BuyerNotification[])
-      : [];
-
-  const [products, setProducts] = useState<Product[]>(initialProducts || initialDataProducts);
-  const [recentBuyers, setRecentBuyers] = useState<BuyerNotification[]>(initialDataBuyers);
+  const [products, setProducts] = useState<Product[]>(
+    initialProducts || fallbackProducts
+  );
+  const [recentBuyers, setRecentBuyers] = useState<BuyerNotification[]>([]);
   const [loading, setLoading] = useState(false);
   const [isSyncing, setIsSyncing] = useState(false);
-  const [source, setSource] = useState<"google_sheet" | "default_fallback">("google_sheet");
+  const [source, setSource] = useState<
+    "laravel_api" | "local_cache" | "default_fallback"
+  >("laravel_api");
   const [rowCount, setRowCount] = useState(products.length);
-  const [lastSynced, setLastSynced] = useState<string>(cachedSheetData?.lastSynced || new Date().toISOString());
+  const [lastSynced, setLastSynced] = useState<string>(new Date().toISOString());
   const [error, setError] = useState<string | undefined>(undefined);
+
+  const adminUrl = API_BASE_URL.replace(/\/api\/?$/, "/admin");
 
   const fetchProducts = useCallback(async (isRefresh = false) => {
     if (isRefresh) {
       setIsSyncing(true);
     }
-    // Only set loading to true if there are no cached products at all
     setProducts((prev) => {
       if (!prev || prev.length === 0) {
         setLoading(true);
@@ -64,7 +64,7 @@ export function ProductProvider({
     setError(undefined);
 
     try {
-      const data: FetchSheetResult = await fetchProductsFromGoogleSheet(isRefresh);
+      const data: FetchProductsResult = await fetchProductsFromLaravel(isRefresh);
       if (data.products && Array.isArray(data.products) && data.products.length > 0) {
         setProducts(data.products);
         setSource(data.source);
@@ -75,15 +75,29 @@ export function ProductProvider({
         setRecentBuyers(data.recentBuyers);
       }
     } catch (err: any) {
-      console.warn("Could not sync with Google Sheet API, using local product catalog:", err);
-      setError(err?.message || "Sync failed");
+      console.warn("Could not sync with Laravel REST API, using cached catalog:", err);
+      setError(err?.message || "API connection failed");
     } finally {
       setLoading(false);
       setIsSyncing(false);
     }
   }, []);
 
+  // Instant local cache restore on client mount (avoids delay on refresh)
   useEffect(() => {
+    try {
+      const cached = localStorage.getItem("selfnotes_laravel_cache");
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed?.products && Array.isArray(parsed.products) && parsed.products.length > 0) {
+          setProducts(parsed.products);
+          if (parsed.recentBuyers) setRecentBuyers(parsed.recentBuyers);
+          if (parsed.lastSynced) setLastSynced(parsed.lastSynced);
+          setSource("local_cache");
+        }
+      }
+    } catch {}
+
     fetchProducts(false);
   }, [fetchProducts]);
 
@@ -106,7 +120,7 @@ export function ProductProvider({
     );
   };
 
-  const featuredProducts = products.slice(0, 6);
+  const featuredProducts = products.slice(0, 8);
 
   return (
     <ProductContext.Provider
@@ -119,8 +133,8 @@ export function ProductProvider({
         isSyncing,
         source,
         rowCount,
-        sheetId: GOOGLE_SHEET_ID,
-        sheetUrl: GOOGLE_SHEET_URL,
+        apiUrl: API_BASE_URL,
+        adminUrl,
         lastSynced,
         error,
         refreshProducts,

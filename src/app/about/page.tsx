@@ -2,8 +2,35 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, ShieldCheck, Heart, Award, ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://selfnotes99.com";
+
+export const metadata: Metadata = {
+  title: "About Us — Empowering CBSE Students with High-Scoring Study Material",
+  description:
+    "Learn how Self Notes 99 provides curated CBSE Class 10 & 12 handwritten study notes, NCERT revision aids, and academic resources to students across India.",
+  alternates: {
+    canonical: `${SITE_URL}/about`,
+  },
+  openGraph: {
+    title: "About Self Notes 99 | High-Quality CBSE Handwritten Study Notes",
+    description:
+      "Our mission is to make board exam revision simple, visually engaging, and accessible with topper-crafted digital notes.",
+    url: `${SITE_URL}/about`,
+  },
+};
 
 export default function AboutPage() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Self Notes 99",
+    url: `${SITE_URL}/about`,
+    description:
+      "Provider of premium CBSE Class 10 & 12 handwritten study notes, NCERT revision materials, and exam guides.",
+  };
   const stats = [
     { value: "30,000+", label: "Happy Customers", sub: "Worldwide community" },
     { value: "500+", label: "Curated Products", sub: "Designed for longevity" },
@@ -30,7 +57,9 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+    <>
+      <JsonLd data={aboutSchema} />
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
       {/* Hero Section */}
       <div className="bg-[#FBF6EE] rounded-3xl p-8 sm:p-14 border border-[#F0E8DC] text-center max-w-4xl mx-auto">
         <span className="text-xs font-bold uppercase tracking-wider text-[#064B35] bg-[#EAF4D5] px-3.5 py-1 rounded-full">
@@ -124,6 +153,7 @@ export default function AboutPage() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

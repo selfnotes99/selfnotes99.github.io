@@ -7,7 +7,7 @@ export const AnnouncementBar = () => {
   const items = [
     {
       icon: <Truck className="w-3.5 h-3.5" />,
-      text: "Free Shipping on Orders $50+",
+      text: "Free Shipping on Orders Rs 50+",
     },
     {
       icon: <RotateCcw className="w-3.5 h-3.5" />,

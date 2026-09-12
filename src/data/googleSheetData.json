@@ -11,17 +11,12 @@
       "price": 49.99,
       "rating": 5,
       "reviewCount": 88,
-      "image": "/images/products/urban-backpack-main.jpg",
+      "image": "https://lh3.googleusercontent.com/d/1JFnzVsJJdOxjbYOLwgXNLmquvCbP6RXs",
       "images": [
-        "/images/products/urban-backpack-main.jpg",
-        "/images/products/urban-backpack-1.jpg",
-        "/images/products/urban-backpack-2.jpg",
-        "/images/products/urban-backpack-3.jpg",
-        "/images/products/urban-backpack-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1546938576-6e6a64f317cc?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?q=75&w=400&auto=format&fit=crop"
+        "https://lh3.googleusercontent.com/d/1JFnzVsJJdOxjbYOLwgXNLmquvCbP6RXs",
+        "https://lh3.googleusercontent.com/d/10EGogaZ8PH7n_8ozc1dTUTvXYyPqx3JS",
+        "https://lh3.googleusercontent.com/d/14E-sMO4AMXK0b_39lKUf05HrhDPsvn0C",
+        "https://lh3.googleusercontent.com/d/1WH13RbO3scnCF-Bc_Mm2GIa7WmQBVB1_"
       ],
       "description": "Engineered for modern city commutes and weekend getaways. Features water-resistant coated canvas, dedicated 16-inch padded laptop compartment, and ergonomic airflow back padding.",
       "features": [
@@ -70,1896 +65,303 @@
     },
     {
       "id": "sheet-prod-2",
-      "slug": "essential-hoodie",
-      "name": "Essential Hoodie",
-      "category": "Men's Fashion",
-      "categorySlug": "men-s-fashion",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 39.99,
+      "slug": "cbse-class-10-biology-chapter-wise-notes",
+      "name": "CBSE Class 10 Biology Chapter-wise Notes",
+      "category": "CBSE",
+      "categorySlug": "cbse",
+      "collection": "Trending",
+      "collectionSlug": "trending",
+      "price": 99,
       "rating": 5,
       "reviewCount": 88,
-      "image": "/images/products/essential-hoodie-main.jpg",
+      "image": "https://lh3.googleusercontent.com/d/1JFnzVsJJdOxjbYOLwgXNLmquvCbP6RXs",
       "images": [
-        "/images/products/essential-hoodie-main.jpg",
-        "/images/products/essential-hoodie-1.jpg",
-        "/images/products/essential-hoodie-2.jpg",
-        "/images/products/essential-hoodie-3.jpg",
-        "/images/products/essential-hoodie-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=75&w=400&auto=format&fit=crop"
+        "https://lh3.googleusercontent.com/d/1JFnzVsJJdOxjbYOLwgXNLmquvCbP6RXs",
+        "https://lh3.googleusercontent.com/d/10EGogaZ8PH7n_8ozc1dTUTvXYyPqx3JS",
+        "https://lh3.googleusercontent.com/d/14E-sMO4AMXK0b_39lKUf05HrhDPsvn0C",
+        "https://lh3.googleusercontent.com/d/1WH13RbO3scnCF-Bc_Mm2GIa7WmQBVB1_"
       ],
-      "description": "Crafted from ultra-soft 450 GSM organic French terry fleece. Features double-lined hood, seamless kangaroo pocket, and ribbed cuffs that retain their shape wash after wash.",
+      "description": "Master CBSE Class 10 Biology with easy-to-understand, chapter-wise notes designed for effective learning, quick revision, and board exam preparation. This study resource covers important concepts, key definitions, diagrams, processes, important questions, and exam-focused points in simple and student-friendly language.\r\n\r\nEach chapter is organized systematically to help students understand difficult biological concepts quickly and revise important topics efficiently. Ideal for NCERT-based preparation, school exams, class tests, assignments, and CBSE Board Exam revision.\r\n\r\nPerfect for Class 10 students looking for concise, well-structured Biology notes that make learning easier and exam preparation more effective.",
       "features": [
-        "100% GOTS certified organic combed cotton",
-        "Heavyweight 450 GSM French Terry",
-        "Double-needle flatlock stitching",
-        "Pre-shrunk fabric to prevent shrinking",
-        "Kangaroo pocket with reinforced seams"
+        "Chapter-wise CBSE Class 10 Biology notes",
+        "NCERT-based study material",
+        "Simple and easy-to-understand explanations",
+        "Important definitions and key concepts",
+        "Important diagrams and biological processes",
+        "Exam-focused important points",
+        "Important questions and answers",
+        "Quick revision notes",
+        "Board exam preparation",
+        "School exam and class test support"
       ],
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
+        "One Size"
       ],
       "colors": [
         {
-          "name": "Forest Green",
+          "name": "Default Green",
           "hex": "#064B35"
         },
         {
-          "name": "Heather Grey",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Onyx Black",
-          "hex": "#064B35"
+          "name": "Classic Black",
+          "hex": "#111111"
         }
       ],
-      "badge": "Best Seller",
-      "badgeType": "best",
-      "stock": 45,
+      "stock": 24,
       "isNew": false,
-      "isBestSeller": true,
+      "isBestSeller": false,
       "isSale": false,
       "featuredOrder": 2,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-3",
-      "slug": "premium-sneakers-2",
-      "name": "Premium Sneakers 2",
-      "category": "Footwear",
-      "categorySlug": "footwear",
-      "collection": "New Collection",
-      "collectionSlug": "new-collection",
-      "price": 59.99,
-      "rating": 5,
-      "reviewCount": 88,
-      "image": "/images/products/premium-sneakers-2-main.jpg",
-      "images": [
-        "/images/products/premium-sneakers-2-main.jpg",
-        "/images/products/premium-sneakers-2-1.jpg",
-        "/images/products/premium-sneakers-2-2.jpg",
-        "/images/products/premium-sneakers-2-3.jpg",
-        "/images/products/premium-sneakers-2-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Timeless court silhouette handcrafted with premium full-grain Italian leather uppers and cushioned memory foam footbeds for day-long walking comfort.",
-      "features": [
-        "Full-grain calfskin leather upper with suede accents",
-        "Antimicrobial OrthoLite memory foam footbed",
-        "Durable natural rubber cupsole with stitch reinforcement",
-        "100% organic waxed cotton laces",
-        "Breathable leather lining"
-      ],
-      "sizes": [
-        "US 8",
-        "US 9",
-        "US 10",
-        "US 11",
-        "US 12"
-      ],
-      "colors": [
-        {
-          "name": "Crisp White / Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Triple White",
-          "hex": "#064B35"
-        },
-        {
-          "name": "White / Navy",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "New",
-      "badgeType": "new",
-      "stock": 18,
-      "isNew": true,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 3,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-4",
-      "slug": "polarized-sunglasses",
-      "name": "Polarized Sunglasses",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 24.99,
-      "rating": 5,
-      "reviewCount": 88,
-      "image": "/images/products/polarized-sunglasses-main.jpg",
-      "images": [
-        "/images/products/polarized-sunglasses-main.jpg",
-        "/images/products/polarized-sunglasses-1.jpg",
-        "/images/products/polarized-sunglasses-2.jpg",
-        "/images/products/polarized-sunglasses-3.jpg",
-        "/images/products/polarized-sunglasses-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1508296695146-257a814070b4?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Engineered with TAC polarized UV400 lenses and handcrafted cellulose acetate frame for superior optical clarity and glare elimination without color distortion.",
-      "features": [
-        "100% UV400 polarization with anti-reflective coating",
-        "Handmade hypoallergenic cellulose acetate frame",
-        "5-barrel stainless steel hinges for lifetime durability",
-        "Scratch-resistant oleophobic coating",
-        "Includes microfiber cleaning pouch and protective hard case"
-      ],
-      "sizes": [
-        "Medium (50-20-145)"
-      ],
-      "colors": [
-        {
-          "name": "Gloss Black",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Tortoiseshell",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Smoky Grey",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 60,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 4,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-5",
-      "slug": "minimal-watch",
-      "name": "Minimal Watch",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 69.99,
-      "rating": 5,
-      "reviewCount": 88,
-      "image": "/images/products/minimal-watch-main.jpg",
-      "images": [
-        "/images/products/minimal-watch-main.jpg",
-        "/images/products/minimal-watch-1.jpg",
-        "/images/products/minimal-watch-2.jpg",
-        "/images/products/minimal-watch-3.jpg",
-        "/images/products/minimal-watch-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Clean Bauhaus aesthetic with a 40mm matte black case, gold accent indices, Japanese Miyota quartz movement, and interchangeable vegetable-tanned Italian leather strap.",
-      "features": [
-        "Japanese Miyota precision quartz movement",
-        "316L surgical-grade stainless steel case",
-        "Sapphire-coated mineral crystal glass",
-        "5 ATM (50m) water resistance",
-        "Vegetable-tanned genuine Italian leather strap"
-      ],
-      "sizes": [
-        "40mm"
-      ],
-      "colors": [
-        {
-          "name": "Black / Tan Strap",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Rose Gold / Black",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Silver / Dark Brown",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 35,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 5,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-6",
-      "slug": "scented-candle",
-      "name": "Scented Candle",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 19.99,
-      "rating": 5,
-      "reviewCount": 88,
-      "image": "/images/products/scented-candle-main.jpg",
-      "images": [
-        "/images/products/scented-candle-main.jpg",
-        "/images/products/scented-candle-1.jpg",
-        "/images/products/scented-candle-2.jpg",
-        "/images/products/scented-candle-3.jpg",
-        "/images/products/scented-candle-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1596433809252-260c2745dfdd?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Hand-poured in small batches using 100% natural soy wax, infused with premium botanical essential oils of Siberian fir needle, sandalwood, and warm amber.",
-      "features": [
-        "100% renewable US-grown soy wax",
-        "Crackling FSC-certified natural wooden wick",
-        "55+ hours clean burn time",
-        "Phthalate-free",
-        "paraben-free",
-        "cruelty-free",
-        "Reusable apothecary amber glass jar"
-      ],
-      "sizes": [
-        "8 oz / 230g"
-      ],
-      "colors": [
-        {
-          "name": "Cedar & Amber",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Wild Eucalyptus",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Vanilla Santal",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 52,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 6,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-7",
-      "slug": "linen-summer-dress",
-      "name": "Linen Summer Dress",
-      "category": "Women's Fashion",
-      "categorySlug": "women-s-fashion",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 64.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/linen-summer-dress-main.jpg",
-      "images": [
-        "/images/products/linen-summer-dress-main.jpg",
-        "/images/products/linen-summer-dress-1.jpg",
-        "/images/products/linen-summer-dress-2.jpg",
-        "/images/products/linen-summer-dress-3.jpg",
-        "/images/products/linen-summer-dress-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Breezy midi dress tailored from 100% European flax linen with a flattering square neckline, smocked bodice, and side seam pockets.",
-      "features": [
-        "100% European Flax Linen",
-        "Breathable & thermo-regulating",
-        "Deep side pockets",
-        "Washable"
-      ],
-      "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "colors": [
-        {
-          "name": "Natural Oat",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Sage Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Terracotta",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 22,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 7,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-8",
-      "slug": "classic-trench-coat",
-      "name": "Classic Trench Coat",
-      "category": "Women's Fashion",
-      "categorySlug": "women-s-fashion",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 129.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/classic-trench-coat-2.jpg",
-      "images": [
-        "/images/products/classic-trench-coat-2.jpg",
-        "/images/products/classic-trench-coat-3.jpg",
-        "/images/products/classic-trench-coat-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1544441893-675973e31985?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Double-breasted timeless silhouette crafted in water-repellent cotton gabardine with horn buttons and a storm flap.",
-      "features": [
-        "Water-repellent gabardine",
-        "Belt with tortoise buckle",
-        "Satin interior lining",
-        "Deep welt pockets"
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "colors": [
-        {
-          "name": "Camel Beige",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Midnight Navy",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Best Seller",
-      "badgeType": "best",
-      "stock": 14,
-      "isNew": false,
-      "isBestSeller": true,
-      "isSale": false,
-      "featuredOrder": 8,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-9",
-      "slug": "chunky-knit-cardigan",
-      "name": "Chunky Knit Cardigan",
-      "category": "Women's Fashion",
-      "categorySlug": "women-s-fashion",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 54.99,
-      "rating": 4.7,
-      "reviewCount": 88,
-      "image": "/images/products/chunky-knit-cardigan-main.jpg",
-      "images": [
-        "/images/products/chunky-knit-cardigan-main.jpg",
-        "/images/products/chunky-knit-cardigan-1.jpg",
-        "/images/products/chunky-knit-cardigan-2.jpg",
-        "/images/products/chunky-knit-cardigan-3.jpg",
-        "/images/products/chunky-knit-cardigan-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Oversized cozy knit with drop shoulders, ribbed cuffs, and organic tortoiseshell buttons.",
-      "features": [
-        "Merino wool & organic cotton blend",
-        "Tortoise buttons",
-        "Relaxed oversized cut",
-        "Gentle on skin"
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "colors": [
-        {
-          "name": "Cream White",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Warm Olive",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "New",
-      "badgeType": "new",
-      "stock": 31,
-      "isNew": true,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 9,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-10",
-      "slug": "leather-crossbody-bag",
-      "name": "Leather Crossbody Bag",
-      "category": "Bags & Luggage",
-      "categorySlug": "bags-luggage",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 89.99,
-      "rating": 5,
-      "reviewCount": 88,
-      "image": "/images/products/leather-crossbody-bag-main.jpg",
-      "images": [
-        "/images/products/leather-crossbody-bag-main.jpg",
-        "/images/products/leather-crossbody-bag-1.jpg",
-        "/images/products/leather-crossbody-bag-2.jpg",
-        "/images/products/leather-crossbody-bag-3.jpg",
-        "/images/products/leather-crossbody-bag-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Sleek crescent saddle shape handcrafted from pebbled Italian leather with gold-tone hardware and an adjustable strap.",
-      "features": [
-        "Full pebbled leather",
-        "Magnetic flap closure",
-        "Interior card slots",
-        "Polished brass accents"
-      ],
-      "sizes": [
-        "One Size"
-      ],
-      "colors": [
-        {
-          "name": "Tan Cognac",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Emerald Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Jet Black",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Best Seller",
-      "badgeType": "best",
-      "stock": 19,
-      "isNew": false,
-      "isBestSeller": true,
-      "isSale": false,
-      "featuredOrder": 10,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-11",
-      "slug": "luxury-tote-bag",
-      "name": "Luxury Tote Bag",
-      "category": "Bags & Luggage",
-      "categorySlug": "bags-luggage",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 119.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/luxury-tote-bag-main.jpg",
-      "images": [
-        "/images/products/luxury-tote-bag-main.jpg",
-        "/images/products/luxury-tote-bag-1.jpg",
-        "/images/products/luxury-tote-bag-2.jpg",
-        "/images/products/luxury-tote-bag-3.jpg",
-        "/images/products/luxury-tote-bag-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Spacious everyday structured tote bag matching the hero lifestyle look in rich hunter green with structured double top handles.",
-      "features": [
-        "Pebbled vegan leather",
-        "Fits 15\" MacBook Pro",
-        "Removable organizer pouch",
-        "Protective metal feet"
-      ],
-      "sizes": [
-        "Large"
-      ],
-      "colors": [
-        {
-          "name": "Hunter Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Warm Biscuit",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 28,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 11,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-12",
-      "slug": "leather-weekend-duffle",
-      "name": "Leather Weekend Duffle",
-      "category": "Bags & Luggage",
-      "categorySlug": "bags-luggage",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 139.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/leather-weekend-duffle-main.jpg",
-      "images": [
-        "/images/products/leather-weekend-duffle-main.jpg",
-        "/images/products/leather-weekend-duffle-1.jpg",
-        "/images/products/leather-weekend-duffle-2.jpg",
-        "/images/products/leather-weekend-duffle-3.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1547949003-9792a18a2601?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1473188557828-cae44a72d3f4?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Spacious 42L capacity travel duffle bag with a separate ventilated shoe compartment and padded shoulder strap.",
-      "features": [
-        "Full grain leather trim & waxed canvas",
-        "Separate shoe compartment",
-        "TSA carry-on compliant",
-        "Water-resistant"
-      ],
-      "sizes": [
-        "42 Liters"
-      ],
-      "colors": [
-        {
-          "name": "Cognac Brown",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Charcoal Grey",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 12,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 12,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-13",
-      "slug": "utility-overshirt-jacket",
-      "name": "Utility Overshirt Jacket",
-      "category": "Men's Fashion",
-      "categorySlug": "men-s-fashion",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 64.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/utility-overshirt-jacket-main.jpg",
-      "images": [
-        "/images/products/utility-overshirt-jacket-main.jpg",
-        "/images/products/utility-overshirt-jacket-1.jpg",
-        "/images/products/utility-overshirt-jacket-2.jpg",
-        "/images/products/utility-overshirt-jacket-3.jpg",
-        "/images/products/utility-overshirt-jacket-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Rugged military-inspired cotton twill overshirt matching the Men's Fashion category card with flap chest pockets.",
-      "features": [
-        "100% heavy cotton twill",
-        "Garment dyed for vintage patina",
-        "Reinforced elbow patches",
-        "Dual chest utility pockets"
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "colors": [
-        {
-          "name": "Olive Field",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Desert Sand",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Dark Navy",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 38,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 13,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-14",
-      "slug": "tailored-slim-chinos",
-      "name": "Tailored Slim Chinos",
-      "category": "Men's Fashion",
-      "categorySlug": "men-s-fashion",
-      "collection": "New Collection",
-      "collectionSlug": "new-collection",
-      "price": 49.99,
-      "rating": 4.6,
-      "reviewCount": 88,
-      "image": "/images/products/tailored-slim-chinos-main.jpg",
-      "images": [
-        "/images/products/tailored-slim-chinos-main.jpg",
-        "/images/products/tailored-slim-chinos-1.jpg",
-        "/images/products/tailored-slim-chinos-2.jpg",
-        "/images/products/tailored-slim-chinos-3.jpg",
-        "/images/products/tailored-slim-chinos-4.jpg",
-        "https://lh3.googleusercontent.com/d/1t6_a1hJpbrNSwkN1bArbjHRULPaK55me",
-        "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Stretch organic cotton chino pants featuring modern tapered leg fit, hidden coin pocket, and crease-resistant wash.",
-      "features": [
-        "98% Organic Cotton",
-        "2% Elastane stretch",
-        "Wrinkle-resistant finish",
-        "Tapered slim silhouette"
-      ],
-      "sizes": [
-        "30x30",
-        "32x32",
-        "34x32",
-        "36x34"
-      ],
-      "colors": [
-        {
-          "name": "British Khaki",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Dark Navy",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Olive",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 40,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 14,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-15",
-      "slug": "retro-runner-sneakers",
-      "name": "Retro Runner Sneakers",
-      "category": "Footwear",
-      "categorySlug": "footwear",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 74.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/retro-runner-sneakers-main.jpg",
-      "images": [
-        "/images/products/retro-runner-sneakers-main.jpg",
-        "/images/products/retro-runner-sneakers-1.jpg",
-        "/images/products/retro-runner-sneakers-2.jpg",
-        "/images/products/retro-runner-sneakers-3.jpg",
-        "/images/products/retro-runner-sneakers-4.jpg",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Vintage track aesthetic with suede and breathable mesh uppers, EVA midsole cushioning, and waffle gum outsole.",
-      "features": [
-        "Genuine suede overlays & mesh upper",
-        "Dual-density EVA foam cushioning",
-        "Waffle-tread gum rubber outsole"
-      ],
-      "sizes": [
-        "US 7",
-        "US 8",
-        "US 9",
-        "US 10",
-        "US 11",
-        "US 12"
-      ],
-      "colors": [
-        {
-          "name": "Forest Green / White",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Grey / Cream",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 20,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 15,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-16",
-      "slug": "classic-chelsea-boots",
-      "name": "Classic Chelsea Boots",
-      "category": "Footwear",
-      "categorySlug": "footwear",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 109.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/classic-chelsea-boots-main.jpg",
-      "images": [
-        "/images/products/classic-chelsea-boots-main.jpg",
-        "/images/products/classic-chelsea-boots-1.jpg",
-        "/images/products/classic-chelsea-boots-2.jpg",
-        "/images/products/classic-chelsea-boots-3.jpg",
-        "/images/products/classic-chelsea-boots-4.jpg",
-        "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Goodyear welted Chelsea boots with elastic side gussets, full leather lining, and durable commando rubber lug soles.",
-      "features": [
-        "Water-treated pull-up leather",
-        "Elastic dual gore panels",
-        "Goodyear welt construction",
-        "Cushioned insole"
-      ],
-      "sizes": [
-        "US 8",
-        "US 9",
-        "US 10",
-        "US 11",
-        "US 12"
-      ],
-      "colors": [
-        {
-          "name": "Crazy Horse Brown",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Matte Black",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Best Seller",
-      "badgeType": "best",
-      "stock": 16,
-      "isNew": false,
-      "isBestSeller": true,
-      "isSale": false,
-      "featuredOrder": 16,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-17",
-      "slug": "ceramic-coffee-dripper-set",
-      "name": "Ceramic Coffee Dripper Set",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "New Collection",
-      "collectionSlug": "new-collection",
-      "price": 34.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/ceramic-coffee-dripper-set-main.jpg",
-      "images": [
-        "/images/products/ceramic-coffee-dripper-set-main.jpg",
-        "/images/products/ceramic-coffee-dripper-set-1.jpg",
-        "/images/products/ceramic-coffee-dripper-set-2.jpg",
-        "/images/products/ceramic-coffee-dripper-set-3.jpg",
-        "/images/products/ceramic-coffee-dripper-set-4.jpg",
-        "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Handcrafted stoneware pour-over dripper and matching 500ml server jug finished in a reactive matte cream glaze.",
-      "features": [
-        "Stoneware ceramic with matte glaze",
-        "Spiral ribbed interior for even extraction",
-        "Heat-resistant glass server",
-        "Dishwasher safe"
-      ],
-      "sizes": [
-        "500ml"
-      ],
-      "colors": [
-        {
-          "name": "Speckled Cream",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Sage Green",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 42,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 17,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-18",
-      "slug": "potted-ficus-indoor-plant",
-      "name": "Potted Ficus Indoor Plant",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 28.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/potted-ficus-indoor-plant-main.jpg",
-      "images": [
-        "/images/products/potted-ficus-indoor-plant-main.jpg",
-        "/images/products/potted-ficus-indoor-plant-1.jpg",
-        "/images/products/potted-ficus-indoor-plant-2.jpg",
-        "/images/products/potted-ficus-indoor-plant-3.jpg",
-        "/images/products/potted-ficus-indoor-plant-4.jpg",
-        "https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1545241047-6083a3684587?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Healthy vibrant indoor plant matching the hero arrangement, potted in a minimalist handcrafted ceramic planter with drainage saucer.",
-      "features": [
-        "Low light tolerant",
-        "Air purifying properties",
-        "Includes hand-thrown ceramic pot",
-        "Easy care guide included"
-      ],
-      "sizes": [
-        "Medium (6\" Pot)"
-      ],
-      "colors": [
-        {
-          "name": "Ceramic White",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 35,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 18,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-19",
-      "slug": "waffle-knit-throw-blanket",
-      "name": "Waffle Knit Throw Blanket",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 44.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/waffle-knit-throw-blanket-main.jpg",
-      "images": [
-        "/images/products/waffle-knit-throw-blanket-main.jpg",
-        "/images/products/waffle-knit-throw-blanket-1.jpg",
-        "/images/products/waffle-knit-throw-blanket-2.jpg",
-        "/images/products/waffle-knit-throw-blanket-3.jpg",
-        "/images/products/waffle-knit-throw-blanket-4.jpg",
-        "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Generously sized 50x70 inch waffle throw woven from long-staple Turkish organic cotton for all-season layering.",
-      "features": [
-        "100% Turkish Organic Cotton",
-        "Deep thermal waffle texture",
-        "Machine washable and tumble dry safe",
-        "Oeko-Tex Standard 100 Certified"
-      ],
-      "sizes": [
-        "50\" x 70\""
-      ],
-      "colors": [
-        {
-          "name": "Warm Olive",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Creamy Ivory",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Oatmeal",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 27,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 19,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-20",
-      "slug": "slim-bifold-card-wallet",
-      "name": "Slim Bifold Card Wallet",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 29.99,
-      "rating": 4.7,
-      "reviewCount": 88,
-      "image": "/images/products/slim-bifold-card-wallet-main.jpg",
-      "images": [
-        "/images/products/slim-bifold-card-wallet-main.jpg",
-        "/images/products/slim-bifold-card-wallet-1.jpg",
-        "/images/products/slim-bifold-card-wallet-4.jpg",
-        "https://images.unsplash.com/photo-1627123424574-724758594e93?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556742049-0a67c5577ff0?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1606503829068-12968393e8e2?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Slim profile wallet constructed from full-grain vegetable-tanned leather with RFID-blocking alloy mesh lining.",
-      "features": [
-        "RFID protection",
-        "Holds 8-10 cards plus full-size cash",
-        "Quick-access front card pull tab",
-        "Hand-burnished edges"
-      ],
-      "sizes": [
-        "Compact"
-      ],
-      "colors": [
-        {
-          "name": "Bourbon Brown",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Midnight Black",
-          "hex": "#064B35"
-        },
-        {
-          "name": "British Green",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 50,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 20,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-21",
-      "slug": "studio-anc-headphones",
-      "name": "Studio ANC Headphones",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 149.99,
-      "rating": 5,
-      "reviewCount": 88,
-      "image": "/images/products/studio-anc-headphones-main.jpg",
-      "images": [
-        "/images/products/studio-anc-headphones-main.jpg",
-        "/images/products/studio-anc-headphones-1.jpg",
-        "/images/products/studio-anc-headphones-2.jpg",
-        "/images/products/studio-anc-headphones-3.jpg",
-        "/images/products/studio-anc-headphones-4.jpg",
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Flagship hybrid active noise cancellation with custom 40mm bio-cellulose drivers, memory foam ear cups, and 45-hour battery life.",
-      "features": [
-        "Active Noise Cancellation with Transparency mode",
-        "45-hour battery life on single charge",
-        "Multipoint Bluetooth 5.3",
-        "Ultra-lightweight 240g"
-      ],
-      "sizes": [
-        "Universal"
-      ],
-      "colors": [
-        {
-          "name": "Matte Black",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Sandstone White",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 15,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 21,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-22",
-      "slug": "minimalist-brass-desk-lamp",
-      "name": "Minimalist Brass Desk Lamp",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 79.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/minimalist-brass-desk-lamp-main.jpg",
-      "images": [
-        "/images/products/minimalist-brass-desk-lamp-main.jpg",
-        "/images/products/minimalist-brass-desk-lamp-1.jpg",
-        "/images/products/minimalist-brass-desk-lamp-2.jpg",
-        "/images/products/minimalist-brass-desk-lamp-3.jpg",
-        "/images/products/minimalist-brass-desk-lamp-4.jpg",
-        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Brushed brass balance arm architectural lamp with continuous rotary touch dimmer and warm 2700K ambient LED module.",
-      "features": [
-        "Solid brass construction",
-        "Step-free touch dimmer",
-        "Warm eye-care flicker-free LED",
-        "360-degree adjustable swivel head"
-      ],
-      "sizes": [
-        "Standard (18\" Height)"
-      ],
-      "colors": [
-        {
-          "name": "Brushed Brass",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Matte Black",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 18,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 22,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-23",
-      "slug": "chic-cat-eye-sunglasses",
-      "name": "Chic Cat-Eye Sunglasses",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 29.99,
-      "rating": 4.7,
-      "reviewCount": 88,
-      "image": "/images/products/chic-cat-eye-sunglasses-main.jpg",
-      "images": [
-        "/images/products/chic-cat-eye-sunglasses-main.jpg",
-        "/images/products/chic-cat-eye-sunglasses-1.jpg",
-        "/images/products/chic-cat-eye-sunglasses-2.jpg",
-        "/images/products/chic-cat-eye-sunglasses-3.jpg",
-        "/images/products/chic-cat-eye-sunglasses-4.jpg",
-        "https://images.unsplash.com/photo-1577803645773-f96470509666?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1508296695146-257a814070b4?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Glamorous bold cat-eye frame inspired by vintage French Riviera glamour with gradient category 3 UV protection lenses.",
-      "features": [
-        "Gradient UV400 lenses",
-        "Hand-beveled acetate edges",
-        "Engraved temple cores",
-        "Hard storage case"
-      ],
-      "sizes": [
-        "One Size"
-      ],
-      "colors": [
-        {
-          "name": "Tortoise Shell",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Deep Olive",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 32,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 23,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-24",
-      "slug": "ribbed-merino-crew-sweater",
-      "name": "Ribbed Merino Crew Sweater",
-      "category": "Men's Fashion",
-      "categorySlug": "men-s-fashion",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 69.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/ribbed-merino-crew-sweater-main.jpg",
-      "images": [
-        "/images/products/ribbed-merino-crew-sweater-main.jpg",
-        "/images/products/ribbed-merino-crew-sweater-1.jpg",
-        "/images/products/ribbed-merino-crew-sweater-2.jpg",
-        "/images/products/ribbed-merino-crew-sweater-3.jpg",
-        "/images/products/ribbed-merino-crew-sweater-4.jpg",
-        "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Ribbed olive knit sweater identical to the garment featured on the hero tabletop photoshoot. Spun from 100% extrafine Merino wool.",
-      "features": [
-        "100% Extrafine Merino Wool",
-        "Thick 7-gauge ribbed knit",
-        "Zero itch guarantee",
-        "Self-cleaning wool properties"
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "colors": [
-        {
-          "name": "Olive Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Sand Khaki",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Deep Forest",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Best Seller",
-      "badgeType": "best",
-      "stock": 25,
-      "isNew": false,
-      "isBestSeller": true,
-      "isSale": false,
-      "featuredOrder": 24,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-25",
-      "slug": "classic-tennis-low-sneakers",
-      "name": "Classic Tennis Low Sneakers",
-      "category": "Footwear",
-      "categorySlug": "footwear",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 54.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/classic-tennis-low-sneakers-main.jpg",
-      "images": [
-        "/images/products/classic-tennis-low-sneakers-main.jpg",
-        "/images/products/classic-tennis-low-sneakers-1.jpg",
-        "/images/products/classic-tennis-low-sneakers-2.jpg",
-        "/images/products/classic-tennis-low-sneakers-3.jpg",
-        "/images/products/classic-tennis-low-sneakers-4.jpg",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Versatile canvas and leather trimmed casual shoes with gum sole and contrast heel counter.",
-      "features": [
-        "Durable 12oz canvas upper",
-        "Vulcanized rubber sole",
-        "Memory foam insole"
-      ],
-      "sizes": [
-        "US 7",
-        "US 8",
-        "US 9",
-        "US 10",
-        "US 11"
-      ],
-      "colors": [
-        {
-          "name": "Pure White",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Off-White / Olive",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 40,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 25,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-26",
-      "slug": "pleated-wide-leg-trousers",
-      "name": "Pleated Wide-Leg Trousers",
-      "category": "Women's Fashion",
-      "categorySlug": "women-s-fashion",
-      "collection": "New Collection",
-      "collectionSlug": "new-collection",
-      "price": 59.99,
-      "rating": 4.7,
-      "reviewCount": 88,
-      "image": "/images/products/pleated-wide-leg-trousers-main.jpg",
-      "images": [
-        "/images/products/pleated-wide-leg-trousers-main.jpg",
-        "/images/products/pleated-wide-leg-trousers-1.jpg",
-        "/images/products/pleated-wide-leg-trousers-2.jpg",
-        "/images/products/pleated-wide-leg-trousers-3.jpg",
-        "/images/products/pleated-wide-leg-trousers-4.jpg",
-        "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "High-waisted trousers with sharp double front pleats and fluid drape in an eco-viscose blend.",
-      "features": [
-        "Eco-viscose & lyocell blend",
-        "High-rise elasticated back waist",
-        "Front slant pockets"
-      ],
-      "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L"
-      ],
-      "colors": [
-        {
-          "name": "Warm Cream",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Espresso Brown",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 22,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 26,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-27",
-      "slug": "insulated-travel-tumbler-20oz",
-      "name": "Insulated Travel Tumbler 20oz",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 24.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/insulated-travel-tumbler-20oz-main.jpg",
-      "images": [
-        "/images/products/insulated-travel-tumbler-20oz-main.jpg",
-        "/images/products/insulated-travel-tumbler-20oz-1.jpg",
-        "/images/products/insulated-travel-tumbler-20oz-2.jpg",
-        "/images/products/insulated-travel-tumbler-20oz-3.jpg",
-        "/images/products/insulated-travel-tumbler-20oz-4.jpg",
-        "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Double-wall vacuum insulated 18/8 kitchen-grade stainless steel tumbler keeping drinks cold 24h or hot 8h.",
-      "features": [
-        "18/8 Pro-grade stainless steel",
-        "Splash-proof slider lid",
-        "Fits standard car cup holders",
-        "BPA free"
-      ],
-      "sizes": [
-        "20 oz / 600ml"
-      ],
-      "colors": [
-        {
-          "name": "Forest Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Cream White",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Matte Black",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Best Seller",
-      "badgeType": "best",
-      "stock": 65,
-      "isNew": false,
-      "isBestSeller": true,
-      "isSale": false,
-      "featuredOrder": 27,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-28",
-      "slug": "mulberry-silk-hair-ties-set",
-      "name": "Mulberry Silk Hair Ties Set",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 18.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/mulberry-silk-hair-ties-set-main.jpg",
-      "images": [
-        "/images/products/mulberry-silk-hair-ties-set-main.jpg",
-        "/images/products/mulberry-silk-hair-ties-set-1.jpg",
-        "/images/products/mulberry-silk-hair-ties-set-2.jpg",
-        "/images/products/mulberry-silk-hair-ties-set-3.jpg",
-        "/images/products/mulberry-silk-hair-ties-set-4.jpg",
-        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1508296695146-257a814070b4?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Set of 3 pure 22 Momme grade 6A Mulberry silk scrunchies that prevent hair breakage and creasing.",
-      "features": [
-        "100% Pure 22 Momme Grade 6A Mulberry Silk",
-        "Anti-frizz and anti-breakage",
-        "Strong interior elastic"
-      ],
-      "sizes": [
-        "Set of 3"
-      ],
-      "colors": [
-        {
-          "name": "Sage / Champagne / Rose",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 58,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 28,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-29",
-      "slug": "washed-linen-duvet-cover-set",
-      "name": "Washed Linen Duvet Cover Set",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 139.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/washed-linen-duvet-cover-set-main.jpg",
-      "images": [
-        "/images/products/washed-linen-duvet-cover-set-main.jpg",
-        "/images/products/washed-linen-duvet-cover-set-1.jpg",
-        "/images/products/washed-linen-duvet-cover-set-2.jpg",
-        "/images/products/washed-linen-duvet-cover-set-3.jpg",
-        "/images/products/washed-linen-duvet-cover-set-4.jpg",
-        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Pre-washed French flax linen duvet set including duvet cover and two envelope pillowcases.",
-      "features": [
-        "100% French Flax Linen",
-        "Gets softer with every wash",
-        "Hidden coconut shell button closures",
-        "Corner ties"
-      ],
-      "sizes": [
-        "Queen",
-        "King"
-      ],
-      "colors": [
-        {
-          "name": "Natural Flax",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Forest Moss",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Crisp White",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 15,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 29,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-30",
-      "slug": "organic-cotton-baseball-cap",
-      "name": "Organic Cotton Baseball Cap",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 19.99,
-      "rating": 4.7,
-      "reviewCount": 88,
-      "image": "/images/products/organic-cotton-baseball-cap-main.jpg",
-      "images": [
-        "/images/products/organic-cotton-baseball-cap-main.jpg",
-        "/images/products/organic-cotton-baseball-cap-1.jpg",
-        "/images/products/organic-cotton-baseball-cap-2.jpg",
-        "/images/products/organic-cotton-baseball-cap-3.jpg",
-        "/images/products/organic-cotton-baseball-cap-4.jpg",
-        "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1521369909029-2afed882baee?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1534215754734-18e55d13e346?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Unstructured 6-panel dad cap made with 100% organic chino twill and brass buckle closure.",
-      "features": [
-        "100% Organic Chino Cotton",
-        "Antique brass adjustable strap",
-        "Embroidered ventilation eyelets"
-      ],
-      "sizes": [
-        "One Size Fits Most"
-      ],
-      "colors": [
-        {
-          "name": "Forest Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Washed Black",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Tan",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 70,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 30,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-31",
-      "slug": "cashmere-lambswool-fringe-scarf",
-      "name": "Cashmere & Lambswool Fringe Scarf",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 49.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/cashmere-lambswool-fringe-scarf-main.jpg",
-      "images": [
-        "/images/products/cashmere-lambswool-fringe-scarf-main.jpg",
-        "/images/products/cashmere-lambswool-fringe-scarf-1.jpg",
-        "/images/products/cashmere-lambswool-fringe-scarf-2.jpg",
-        "/images/products/cashmere-lambswool-fringe-scarf-3.jpg",
-        "/images/products/cashmere-lambswool-fringe-scarf-4.jpg",
-        "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Sumptuously soft scarf woven in Scotland from 90% superfine lambswool and 10% Mongolian cashmere.",
-      "features": [
-        "Lambswool & Cashmere blend",
-        "Traditional tassel fringe",
-        "Ultra-warm without bulk"
-      ],
-      "sizes": [
-        "70\" x 12\""
-      ],
-      "colors": [
-        {
-          "name": "Hunter Green Plaid",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Camel",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Charcoal",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "New",
-      "badgeType": "new",
-      "stock": 24,
-      "isNew": true,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 31,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-32",
-      "slug": "heavyweight-boxy-cotton-t-shirt",
-      "name": "Heavyweight Boxy Cotton T-Shirt",
-      "category": "Men's Fashion",
-      "categorySlug": "men-s-fashion",
-      "collection": "Summer Collection",
-      "collectionSlug": "summer-collection",
-      "price": 28.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/heavyweight-boxy-cotton-t-shirt-main.jpg",
-      "images": [
-        "/images/products/heavyweight-boxy-cotton-t-shirt-main.jpg",
-        "/images/products/heavyweight-boxy-cotton-t-shirt-1.jpg",
-        "/images/products/heavyweight-boxy-cotton-t-shirt-2.jpg",
-        "/images/products/heavyweight-boxy-cotton-t-shirt-3.jpg",
-        "/images/products/heavyweight-boxy-cotton-t-shirt-4.jpg",
-        "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "280 GSM heavyweight combed cotton tee with relaxed boxy drop-shoulder cut and thick 1-inch collar ribbing.",
-      "features": [
-        "280 GSM 100% Combed Cotton",
-        "Boxy drop-shoulder fit",
-        "Pre-shrunk",
-        "Reinforced neckband"
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "colors": [
-        {
-          "name": "Sage Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Vintage White",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Washed Black",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 80,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 32,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-33",
-      "slug": "handcrafted-suede-loafers",
-      "name": "Handcrafted Suede Loafers",
-      "category": "Footwear",
-      "categorySlug": "footwear",
-      "collection": "Premium Collection",
-      "collectionSlug": "premium-collection",
-      "price": 99.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/handcrafted-suede-loafers-main.jpg",
-      "images": [
-        "/images/products/handcrafted-suede-loafers-main.jpg",
-        "/images/products/handcrafted-suede-loafers-1.jpg",
-        "/images/products/handcrafted-suede-loafers-2.jpg",
-        "/images/products/handcrafted-suede-loafers-3.jpg",
-        "/images/products/handcrafted-suede-loafers-4.jpg",
-        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Unlined Italian calf suede driving loafers with penny keeper strap and flexible rubber pebble soles.",
-      "features": [
-        "Buttery soft Italian suede",
-        "Flexible driving sole",
-        "Supple leather insole",
-        "Hand-stitched apron"
-      ],
-      "sizes": [
-        "US 8",
-        "US 9",
-        "US 10",
-        "US 11",
-        "US 12"
-      ],
-      "colors": [
-        {
-          "name": "Olive Suede",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Chocolate Suede",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Sand Suede",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "Sale",
-      "badgeType": "sale",
-      "stock": 14,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": true,
-      "featuredOrder": 33,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-34",
-      "slug": "travel-passport-card-wallet",
-      "name": "Travel Passport & Card Wallet",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Trending Collection",
-      "collectionSlug": "trending-collection",
-      "price": 24.99,
-      "rating": 4.7,
-      "reviewCount": 88,
-      "image": "/images/products/travel-passport-card-wallet-main.jpg",
-      "images": [
-        "/images/products/travel-passport-card-wallet-main.jpg",
-        "/images/products/travel-passport-card-wallet-1.jpg",
-        "/images/products/travel-passport-card-wallet-2.jpg",
-        "https://images.unsplash.com/photo-1544717305-2782549b5136?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1627123424574-724758594e93?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556742049-0a67c5577ff0?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1606503829068-12968393e8e2?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Sleek travel companion holding passport, boarding pass, SIM cards, and 4 credit cards in vegetable tanned leather.",
-      "features": [
-        "Full grain leather",
-        "Fits all international passports",
-        "Dedicated pen slot & SIM card tray"
-      ],
-      "sizes": [
-        "One Size"
-      ],
-      "colors": [
-        {
-          "name": "Forest Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Caramel",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 44,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 34,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-35",
-      "slug": "fisherman-merino-wool-beanie",
-      "name": "Fisherman Merino Wool Beanie",
-      "category": "Accessories",
-      "categorySlug": "accessories",
-      "collection": "Winter Collection",
-      "collectionSlug": "winter-collection",
-      "price": 22.99,
-      "rating": 4.8,
-      "reviewCount": 88,
-      "image": "/images/products/fisherman-merino-wool-beanie-main.jpg",
-      "images": [
-        "/images/products/fisherman-merino-wool-beanie-main.jpg",
-        "/images/products/fisherman-merino-wool-beanie-1.jpg",
-        "/images/products/fisherman-merino-wool-beanie-2.jpg",
-        "/images/products/fisherman-merino-wool-beanie-3.jpg",
-        "/images/products/fisherman-merino-wool-beanie-4.jpg",
-        "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1521369909029-2afed882baee?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Classic ribbed cuff beanie knit in Canada using 100% fine Merino wool that retains warmth even when damp.",
-      "features": [
-        "100% Fine Merino wool",
-        "Double-layer fold-up cuff",
-        "Zero itch and moisture-wicking"
-      ],
-      "sizes": [
-        "One Size"
-      ],
-      "colors": [
-        {
-          "name": "Deep Green",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Mustard Gold",
-          "hex": "#064B35"
-        },
-        {
-          "name": "Heather Grey",
-          "hex": "#064B35"
-        }
-      ],
-      "stock": 60,
-      "isNew": false,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 35,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
-    },
-    {
-      "id": "sheet-prod-36",
-      "slug": "botanical-aromatherapy-reed-diffuser",
-      "name": "Botanical Aromatherapy Reed Diffuser",
-      "category": "Home & Living",
-      "categorySlug": "home-living",
-      "collection": "New Collection",
-      "collectionSlug": "new-collection",
-      "price": 26.99,
-      "rating": 4.9,
-      "reviewCount": 88,
-      "image": "/images/products/botanical-aromatherapy-reed-diffuser-main.jpg",
-      "images": [
-        "/images/products/botanical-aromatherapy-reed-diffuser-main.jpg",
-        "/images/products/botanical-aromatherapy-reed-diffuser-1.jpg",
-        "/images/products/botanical-aromatherapy-reed-diffuser-2.jpg",
-        "/images/products/botanical-aromatherapy-reed-diffuser-3.jpg",
-        "/images/products/botanical-aromatherapy-reed-diffuser-4.jpg",
-        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?q=75&w=400&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1596433809252-260c2745dfdd?q=75&w=400&auto=format&fit=crop"
-      ],
-      "description": "Florentine glass bottle with natural rattan reeds dispersing notes of sweet orange blossom, neroli, and white cedar.",
-      "features": [
-        "Non-toxic alcohol-free carrier oil",
-        "3-4 months continuous diffusion",
-        "8 natural black rattan reeds",
-        "Amber glass bottle"
-      ],
-      "sizes": [
-        "200ml"
-      ],
-      "colors": [
-        {
-          "name": "Neroli & Cedar",
-          "hex": "#064B35"
-        }
-      ],
-      "badge": "New",
-      "badgeType": "new",
-      "stock": 36,
-      "isNew": true,
-      "isBestSeller": false,
-      "isSale": false,
-      "featuredOrder": 36,
-      "link": "https://in.pinterest.com/pin/1095219203164201454/"
+      "link": "https://in.pinterest.com/pin/1095219203164201454/",
+      "tableOfContents": [
+        "1 LIFE PROCESSES",
+        "1.1 Introduction to Life Processes",
+        "1.2 Basic Life Processes",
+        "1.3 Nutrition",
+        "1.4 Modes of Nutrition",
+        "1.5 Autotrophic Nutrition",
+        "1.6 Photosynthesis",
+        "1.7 Raw Materials Required for Photosynthesis",
+        "1.8 Heterotrophic Nutrition",
+        "1.9 Nutrition in Amoeba",
+        "1.10 Nutrition in Human Beings",
+        "1.11 Human Digestive System",
+        "1.12 Digestion in the Mouth",
+        "1.13 Digestion in the Stomach",
+        "1.14 Digestion in the Small Intestine",
+        "1.15 Absorption and Assimilation",
+        "1.16 Respiration",
+        "1.17 Aerobic Respiration",
+        "1.18 Anaerobic Respiration",
+        "1.19 Respiration in Human Beings",
+        "1.20 Human Respiratory System",
+        "1.21 Mechanism of Breathing",
+        "1.22 Exchange of Gases",
+        "1.23 Transportation",
+        "1.24 Transportation in Plants",
+        "1.25 Xylem and Phloem",
+        "1.26 Transportation of Water and Minerals",
+        "1.27 Transportation of Food",
+        "1.28 Transportation in Human Beings",
+        "1.29 Blood",
+        "1.30 Components of Blood",
+        "1.31 Human Circulatory System",
+        "1.32 Heart",
+        "1.33 Double Circulation",
+        "1.34 Blood Vessels",
+        "1.35 Lymph",
+        "1.36 Excretion",
+        "1.37 Excretion in Plants",
+        "1.38 Excretion in Human Beings",
+        "1.39 Human Excretory System",
+        "1.40 Nephron",
+        "1.41 Formation of Urine",
+        "1.42 Important Diagrams",
+        "1.43 Important Definitions",
+        "1.44 Important Questions",
+        "1.45 Chapter Summary and Revision",
+        "2 CONTROL AND COORDINATION",
+        "2.1 Introduction to Control and Coordination",
+        "2.2 Nervous System",
+        "2.3 Coordination in Animals",
+        "2.4 Neurons",
+        "2.5 Structure and Function of a Neuron",
+        "2.6 Transmission of Nerve Impulses",
+        "2.7 Reflex Action",
+        "2.8 Reflex Arc",
+        "2.9 Human Nervous System",
+        "2.10 Central Nervous System",
+        "2.11 Brain",
+        "2.12 Forebrain",
+        "2.13 Midbrain",
+        "2.14 Hindbrain",
+        "2.15 Protection of Brain",
+        "2.16 Spinal Cord",
+        "2.17 Coordination in Plants",
+        "2.18 Plant Movements",
+        "2.19 Tropic Movements",
+        "2.20 Phototropism",
+        "2.21 Geotropism",
+        "2.22 Hydrotropism",
+        "2.23 Chemotropism",
+        "2.24 Plant Hormones",
+        "2.25 Coordination in Animals Through Hormones",
+        "2.26 Endocrine Glands",
+        "2.27 Major Animal Hormones",
+        "2.28 Adrenaline",
+        "2.29 Thyroxine",
+        "2.30 Growth Hormone",
+        "2.31 Insulin",
+        "2.32 Sex Hormones",
+        "2.33 Feedback Mechanism",
+        "2.34 Important Diagrams",
+        "2.35 Important Definitions",
+        "2.36 Important Questions",
+        "2.37 Chapter Summary and Revision",
+        "3 HOW DO ORGANISMS REPRODUCE?",
+        "3.1 Introduction to Reproduction",
+        "3.2 Importance of Reproduction",
+        "3.3 Modes of Reproduction",
+        "3.4 Asexual Reproduction",
+        "3.5 Fission",
+        "3.6 Binary Fission",
+        "3.7 Multiple Fission",
+        "3.8 Fragmentation",
+        "3.9 Regeneration",
+        "3.10 Budding",
+        "3.11 Spore Formation",
+        "3.12 Vegetative Propagation",
+        "3.13 Advantages of Vegetative Propagation",
+        "3.14 Sexual Reproduction",
+        "3.15 Reproduction in Flowering Plants",
+        "3.16 Structure of a Flower",
+        "3.17 Male Reproductive Part",
+        "3.18 Female Reproductive Part",
+        "3.19 Pollination",
+        "3.20 Self-Pollination and Cross-Pollination",
+        "3.21 Fertilisation in Plants",
+        "3.22 Seed and Fruit Formation",
+        "3.23 Human Reproduction",
+        "3.24 Male Reproductive System",
+        "3.25 Female Reproductive System",
+        "3.26 Puberty and Adolescence",
+        "3.27 Gametes",
+        "3.28 Fertilisation in Humans",
+        "3.29 Implantation",
+        "3.30 Pregnancy and Development of Embryo",
+        "3.31 Menstrual Cycle",
+        "3.32 Reproductive Health",
+        "3.33 Contraceptive Methods",
+        "3.34 Surgical Methods of Contraception",
+        "3.35 Sexually Transmitted Diseases",
+        "3.36 Important Diagrams",
+        "3.37 Important Definitions",
+        "3.38 Important Questions",
+        "3.39 Chapter Summary and Revision",
+        "4 HEREDITY",
+        "4.1 Introduction to Heredity",
+        "4.2 Variation",
+        "4.3 Importance of Variation",
+        "4.4 Mendel and His Experiments",
+        "4.5 Mendel's Experiments on Pea Plants",
+        "4.6 Dominant and Recessive Traits",
+        "4.7 Monohybrid Cross",
+        "4.8 Mendel's Laws of Inheritance",
+        "4.9 Genotype and Phenotype",
+        "4.10 Inheritance of Traits",
+        "4.11 Sex Determination in Humans",
+        "4.12 Inherited and Acquired Traits",
+        "4.13 Variation During Reproduction",
+        "4.14 Evolution",
+        "4.15 Origin of Life and Evolution",
+        "4.16 Evidences for Evolution",
+        "4.17 Homologous Organs",
+        "4.18 Analogous Organs",
+        "4.19 Fossils",
+        "4.20 Evolution by Stages",
+        "4.21 Human Evolution",
+        "4.22 Important Diagrams and Genetic Crosses",
+        "4.23 Important Definitions",
+        "4.24 Important Questions",
+        "4.25 Chapter Summary and Revision",
+        "5 OUR ENVIRONMENT",
+        "5.1 Introduction to Environment",
+        "5.2 Ecosystem",
+        "5.3 Components of an Ecosystem",
+        "5.4 Biotic Components",
+        "5.5 Abiotic Components",
+        "5.6 Producers",
+        "5.7 Consumers",
+        "5.8 Decomposers",
+        "5.9 Food Chain",
+        "5.10 Food Web",
+        "5.11 Trophic Levels",
+        "5.12 Energy Flow in an Ecosystem",
+        "5.13 Ten Percent Law",
+        "5.14 Biological Magnification",
+        "5.15 Ozone Layer",
+        "5.16 Ozone Depletion",
+        "5.17 Causes of Ozone Depletion",
+        "5.18 Effects of Ozone Depletion",
+        "5.19 Environmental Problems",
+        "5.20 Biodegradable Substances",
+        "5.21 Non-Biodegradable Substances",
+        "5.22 Waste Management",
+        "5.23 Important Diagrams",
+        "5.24 Important Definitions",
+        "5.25 Important Questions",
+        "5.26 Chapter Summary and Revision",
+        "6 SUSTAINABLE MANAGEMENT OF NATURAL RESOURCES",
+        "6.1 Introduction to Natural Resources",
+        "6.2 Need for Sustainable Management",
+        "6.3 Sustainable Development",
+        "6.4 Forests and Wildlife",
+        "6.5 Stakeholders in Forest Conservation",
+        "6.6 Conservation of Forests",
+        "6.7 Water as a Natural Resource",
+        "6.8 Water Management",
+        "6.9 Dams",
+        "6.10 Advantages of Dams",
+        "6.11 Problems Associated with Large Dams",
+        "6.12 Water Harvesting",
+        "6.13 Rainwater Harvesting",
+        "6.14 Coal and Petroleum",
+        "6.15 Conservation of Coal and Petroleum",
+        "6.16 Sustainable Use of Natural Resources",
+        "6.17 Three R's – Reduce, Reuse and Recycle",
+        "6.18 Important Examples",
+        "6.19 Important Questions",
+        "6.20 Chapter Summary and Revision",
+        "7 BIOLOGY IMPORTANT DIAGRAMS",
+        "7.1 Photosynthesis",
+        "7.2 Human Digestive System",
+        "7.3 Human Respiratory System",
+        "7.4 Human Heart",
+        "7.5 Blood Circulation",
+        "7.6 Human Excretory System",
+        "7.7 Nephron",
+        "7.8 Neuron",
+        "7.9 Reflex Arc",
+        "7.10 Human Brain",
+        "7.11 Plant Tropic Movements",
+        "7.12 Structure of Flower",
+        "7.13 Male Reproductive System",
+        "7.14 Female Reproductive System",
+        "7.15 Mendelian Genetic Cross",
+        "7.16 Food Chain",
+        "7.17 Food Web",
+        "7.18 Energy Flow in Ecosystem",
+        "8 IMPORTANT DEFINITIONS AND KEY TERMS",
+        "8.1 Chapter-wise Definitions",
+        "8.2 Important Biological Terms",
+        "8.3 One-Line Concepts",
+        "8.4 Important Differences",
+        "8.5 Important Processes",
+        "8.6 Important Facts for Examination",
+        "9 EXAM-FOCUSED QUESTION BANK",
+        "9.1 Multiple Choice Questions",
+        "9.2 Assertion and Reason Questions",
+        "9.3 Very Short Answer Questions",
+        "9.4 Short Answer Questions",
+        "9.5 Long Answer Questions",
+        "9.6 Case-Based Questions",
+        "9.7 Competency-Based Questions",
+        "9.8 Application-Based Questions",
+        "9.9 Diagram-Based Questions",
+        "9.10 NCERT-Based Questions",
+        "9.11 Board-Style Questions",
+        "9.12 Important Questions for Revision",
+        "10 QUICK REVISION",
+        "10.1 Chapter-wise Quick Notes",
+        "10.2 Important Concepts",
+        "10.3 Important Definitions",
+        "10.4 Important Diagrams",
+        "10.5 Important Differences",
+        "10.6 Important Processes",
+        "10.7 Important Questions",
+        "10.8 Last-Minute Revision Notes",
+        "10.9 Board Exam Revision Checklist"
+      ]
     }
   ],
   "recentBuyers": [
@@ -2570,7 +972,7 @@
       "productName": "Cotton Hoodie"
     }
   ],
-  "rowCount": 36,
-  "lastSynced": "2026-09-09T18:40:17.256Z",
+  "rowCount": 2,
+  "lastSynced": "2026-09-10T13:48:54.525Z",
   "source": "google_sheet_json"
 }

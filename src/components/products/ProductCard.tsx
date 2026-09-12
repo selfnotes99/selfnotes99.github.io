@@ -82,26 +82,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {/* Product Image with Secondary Image on Hover */}
         <Link
           href={`/products/${product.slug}`}
-          className="relative block w-full aspect-square rounded-lg overflow-hidden bg-[#FAFAFA] mb-3 group/img"
+          className="relative block w-full aspect-[4/5] rounded-lg overflow-hidden bg-[#FAFAFA] mb-3 group/img"
         >
           <Image
             src={product.image}
             alt={product.name}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-            className={`object-contain p-2 transition-all duration-500 ease-out ${
-              product.images && product.images[1]
+            className={`object-contain p-2 transition-all duration-300 ease-out ${
+              product.images && product.images[1] && product.images[1] !== product.image
                 ? "group-hover/img:opacity-0"
-                : "group-hover:scale-106"
+                : "group-hover:scale-105"
             }`}
           />
-          {product.images && product.images[1] && (
+          {product.images && product.images[1] && product.images[1] !== product.image && (
             <Image
               src={product.images[1]}
               alt={`${product.name} alternate angle`}
               fill
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-              className="object-contain p-2 opacity-0 group-hover/img:opacity-100 group-hover/img:scale-106 transition-all duration-500 ease-out"
+              className="object-contain p-2 opacity-0 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-300 ease-out"
             />
           )}
         </Link>

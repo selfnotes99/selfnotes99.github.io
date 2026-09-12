@@ -15,10 +15,10 @@ export const Footer: React.FC = () => {
   const handleFooterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFooterSubscribed(true);
-    setSyncStatus(footerEmail.trim() ? "Subscribed & Syncing..." : "Syncing Google Sheet...");
+    setSyncStatus(footerEmail.trim() ? "Subscribed & Syncing..." : "Syncing with CMS...");
     try {
       await refreshProducts();
-      setSyncStatus(footerEmail.trim() ? "Subscribed! Catalog synced." : "✅ Google Sheet live synced!");
+      setSyncStatus(footerEmail.trim() ? "Subscribed! Catalog synced." : "✅ Catalog synced with Laravel CMS!");
     } catch {
       setSyncStatus("Catalog refreshed!");
     }
@@ -261,7 +261,7 @@ export const Footer: React.FC = () => {
                 <Truck className="w-3.5 h-3.5 text-[#064B35] shrink-0" />
                 <div className="leading-tight">
                   <p className="font-bold text-[#111111]">Free Shipping</p>
-                  <p className="text-[10px] text-gray-500">On Orders $50+</p>
+                  <p className="text-[10px] text-gray-500">On Orders Rs 50+</p>
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
@@ -290,6 +290,20 @@ export const Footer: React.FC = () => {
             <Link href="/faqs" className="hover:underline">
               Security
             </Link>
+            <span>•</span>
+            <a
+              href="http://127.0.0.1:8000/admin"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#064B35] font-bold hover:underline inline-flex items-center gap-1"
+            >
+              <span>CMS Admin</span>
+              <svg width="10" height="10" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
           </div>
         </div>
       </div>

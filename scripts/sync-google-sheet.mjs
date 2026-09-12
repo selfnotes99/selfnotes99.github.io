@@ -229,58 +229,56 @@ async function sync() {
             "Easy maintenance & lifetime craftsmanship backing",
           ];
 
-      const images = [];
-
-      // Check for local compressed product images first
-      const mainLocalDisk = path.join(publicDir, "images", "products", `${slug}-main.jpg`);
-      if (fs.existsSync(mainLocalDisk)) {
-        images.push(`/images/products/${slug}-main.jpg`);
-      }
-      for (let k = 1; k <= 4; k++) {
-        const kLocalDisk = path.join(publicDir, "images", "products", `${slug}-${k}.jpg`);
-        const kRel = `/images/products/${slug}-${k}.jpg`;
-        if (fs.existsSync(kLocalDisk) && !images.includes(kRel)) {
-          images.push(kRel);
-        }
-      }
-
+      // 1. Collect Google Sheet images first (strict priority)
+      const sheetImages = [];
       if (img1Idx >= 0 && getVal(img1Idx)) {
         const u = normalizeImageUrl(getVal(img1Idx));
-        if (!images.includes(u)) images.push(u);
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
       }
       if (img2Idx >= 0 && getVal(img2Idx)) {
         const u = normalizeImageUrl(getVal(img2Idx));
-        if (!images.includes(u)) images.push(u);
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
       }
       if (img3Idx >= 0 && getVal(img3Idx)) {
         const u = normalizeImageUrl(getVal(img3Idx));
-        if (!images.includes(u)) images.push(u);
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
       }
       if (img4Idx >= 0 && getVal(img4Idx)) {
         const u = normalizeImageUrl(getVal(img4Idx));
-        if (!images.includes(u)) images.push(u);
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
       }
 
-      if (images.length < 4 && imageIdx >= 0) {
+      if (imageIdx >= 0) {
         const combined = getVal(imageIdx);
         if (combined) {
           const split = combined.split(/[,;\n\s]+/).map((s) => normalizeImageUrl(s.trim())).filter((s) => s.startsWith("http") || s.startsWith("/images/"));
           for (const s of split) {
-            if (!images.includes(s)) images.push(s);
+            if (s && !sheetImages.includes(s)) sheetImages.push(s);
           }
         }
       }
 
-      const catFallbacks = CATEGORY_FALLBACK_IMAGES[categorySlug] || GLOBAL_DEFAULT_IMAGES;
-      let fallbackIndex = 0;
-      while (images.length < 4) {
-        const fallbackUrl = normalizeImageUrl(catFallbacks[fallbackIndex % catFallbacks.length]);
-        if (!images.includes(fallbackUrl)) {
-          images.push(fallbackUrl);
-        } else {
-          images.push(normalizeImageUrl(GLOBAL_DEFAULT_IMAGES[fallbackIndex % GLOBAL_DEFAULT_IMAGES.length]));
+      let images = [];
+      if (sheetImages.length > 0) {
+        // Use sheet images exclusively - do NOT add other unrelated fallback images
+        images = sheetImages;
+      } else {
+        // Only if sheet has NO images at all, check for local product assets
+        const mainLocalDisk = path.join(publicDir, "images", "products", `${slug}-main.jpg`);
+        if (fs.existsSync(mainLocalDisk)) {
+          images.push(`/images/products/${slug}-main.jpg`);
         }
-        fallbackIndex++;
+        for (let k = 1; k <= 4; k++) {
+          const kLocalDisk = path.join(publicDir, "images", "products", `${slug}-${k}.jpg`);
+          const kRel = `/images/products/${slug}-${k}.jpg`;
+          if (fs.existsSync(kLocalDisk) && !images.includes(kRel)) {
+            images.push(kRel);
+          }
+        }
+        if (images.length === 0) {
+          const catFallbacks = CATEGORY_FALLBACK_IMAGES[categorySlug] || GLOBAL_DEFAULT_IMAGES;
+          images.push(normalizeImageUrl(catFallbacks[0]));
+        }
       }
 
       const sizesRaw = getVal(sizesIdx);

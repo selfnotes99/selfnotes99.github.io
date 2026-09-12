@@ -176,7 +176,7 @@ export default function ProductDetailClient({ params }: PageProps) {
                       src={img}
                       alt={`${product.name} view ${idx + 1}`}
                       fill
-                      className="object-cover"
+                      className="object-contain p-1"
                       sizes="80px"
                     />
                   </button>
@@ -185,13 +185,13 @@ export default function ProductDetailClient({ params }: PageProps) {
             )}
 
             {/* Main Hero Showcase */}
-            <div className="relative flex-1 aspect-square sm:aspect-auto sm:min-h-[520px] rounded-3xl overflow-hidden bg-white border border-gray-200/80 p-4 sm:p-6 flex items-center justify-center shadow-sm group/mainimg">
+            <div className="relative flex-1 aspect-[4/5] sm:aspect-auto sm:min-h-[540px] rounded-3xl overflow-hidden bg-white border border-gray-200/80 p-2 sm:p-4 flex items-center justify-center shadow-sm group/mainimg">
               <Image
                 src={galleryImages[activeImageIndex] || product.image}
                 alt={product.name}
                 fill
                 priority
-                className="object-contain p-4 sm:p-6 transition-all duration-500 ease-out"
+                className="object-contain transition-all duration-300 ease-out"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
 

@@ -275,34 +275,42 @@ export async function fetchProductsFromGoogleSheet(bypassCache = false): Promise
             "Easy maintenance & lifetime craftsmanship backing",
           ];
 
-      // Collect images (at least 4 photos strictly enforced)
-      const images: string[] = [];
-      if (img1Idx >= 0 && getVal(img1Idx)) images.push(normalizeImageUrl(getVal(img1Idx)));
-      if (img2Idx >= 0 && getVal(img2Idx)) images.push(normalizeImageUrl(getVal(img2Idx)));
-      if (img3Idx >= 0 && getVal(img3Idx)) images.push(normalizeImageUrl(getVal(img3Idx)));
-      if (img4Idx >= 0 && getVal(img4Idx)) images.push(normalizeImageUrl(getVal(img4Idx)));
+      // 1. Collect Google Sheet images (strict priority)
+      const sheetImages: string[] = [];
+      if (img1Idx >= 0 && getVal(img1Idx)) {
+        const u = normalizeImageUrl(getVal(img1Idx));
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
+      }
+      if (img2Idx >= 0 && getVal(img2Idx)) {
+        const u = normalizeImageUrl(getVal(img2Idx));
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
+      }
+      if (img3Idx >= 0 && getVal(img3Idx)) {
+        const u = normalizeImageUrl(getVal(img3Idx));
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
+      }
+      if (img4Idx >= 0 && getVal(img4Idx)) {
+        const u = normalizeImageUrl(getVal(img4Idx));
+        if (u && !sheetImages.includes(u)) sheetImages.push(u);
+      }
 
-      if (images.length < 4 && imageIdx >= 0) {
+      if (imageIdx >= 0) {
         const combined = getVal(imageIdx);
         if (combined) {
-          const split = combined.split(/[,;\n\s]+/).map((s) => normalizeImageUrl(s.trim())).filter((s) => s.startsWith("http"));
+          const split = combined.split(/[,;\n\s]+/).map((s) => normalizeImageUrl(s.trim())).filter((s) => s.startsWith("http") || s.startsWith("/images/"));
           for (const s of split) {
-            if (!images.includes(s)) images.push(s);
+            if (s && !sheetImages.includes(s)) sheetImages.push(s);
           }
         }
       }
 
-      // Ensure minimum 4 photos per product!
-      const catFallbacks = CATEGORY_FALLBACK_IMAGES[categorySlug] || GLOBAL_DEFAULT_IMAGES;
-      let fallbackIndex = 0;
-      while (images.length < 4) {
-        const fallbackUrl = catFallbacks[fallbackIndex % catFallbacks.length];
-        if (!images.includes(fallbackUrl)) {
-          images.push(fallbackUrl);
-        } else {
-          images.push(GLOBAL_DEFAULT_IMAGES[fallbackIndex % GLOBAL_DEFAULT_IMAGES.length]);
-        }
-        fallbackIndex++;
+      let images: string[] = [];
+      if (sheetImages.length > 0) {
+        // Use sheet images exclusively - do NOT inject random clothing/backpack fallbacks
+        images = sheetImages;
+      } else {
+        const catFallbacks = CATEGORY_FALLBACK_IMAGES[categorySlug] || GLOBAL_DEFAULT_IMAGES;
+        images = [catFallbacks[0]];
       }
 
       const sizesRaw = getVal(sizesIdx);

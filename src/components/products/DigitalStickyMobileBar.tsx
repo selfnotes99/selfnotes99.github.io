@@ -51,7 +51,7 @@ export const DigitalStickyMobileBar: React.FC<DigitalStickyMobileBarProps> = ({
       <div className="flex items-center gap-2.5">
         {/* Thumbnail & Price Info */}
         <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-gray-100 shrink-0 border border-gray-200">
-          <Image src={product.image} alt={product.name} fill className="object-cover" sizes="48px" />
+          <Image src={product.image} alt={product.name} fill className="object-contain p-0.5 bg-white" sizes="48px" />
         </div>
 
         <div className="flex-1 min-w-0">

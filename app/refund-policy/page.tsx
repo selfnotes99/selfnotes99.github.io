@@ -4,8 +4,23 @@ import Image from 'next/image';
 import { ArrowLeft, HelpCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'Refund & Cancellation Policy | Topper Canvas',
-  description: 'Learn about the shipping, cancellation, and refund policies for digital products on Topper Canvas.'
+  title: 'Shipping & Refund Policy | Topper Canvas',
+  description: 'Learn about the instant digital delivery, cancellation, and refund policies for study notes on Topper Canvas.',
+  alternates: {
+    canonical: 'https://selfnotes99.github.io/refund-policy',
+  },
+  openGraph: {
+    title: 'Shipping & Refund Policy | Topper Canvas',
+    description: 'Instant digital delivery and refund policies for digital study notes on Topper Canvas.',
+    url: 'https://selfnotes99.github.io/refund-policy',
+    siteName: 'SQL Mastery',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Shipping & Refund Policy | Topper Canvas',
+    description: 'Instant digital delivery and refund policies on Topper Canvas.',
+  },
 };
 
 export default function RefundPolicyPage() {

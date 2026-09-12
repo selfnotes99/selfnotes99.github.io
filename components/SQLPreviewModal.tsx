@@ -53,7 +53,7 @@ export const SQLPreviewModal: React.FC<SQLPreviewModalProps> = ({ isOpen, onClos
 
           <button
             onClick={onClose}
-            className="p-1.5 rounded-full hover:bg-white/20 transition-colors text-white"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-white/20 transition-colors text-white"
             aria-label="Close preview"
           >
             <X className="w-6 h-6" />

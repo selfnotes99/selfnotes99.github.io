@@ -5,7 +5,22 @@ import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
   title: 'Privacy Policy | Topper Canvas',
-  description: 'Our privacy policy explains how Topper Canvas collects, protects, and uses student and customer information.'
+  description: 'Our privacy policy explains how Topper Canvas collects, protects, and uses student and customer information.',
+  alternates: {
+    canonical: 'https://selfnotes99.github.io/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | Topper Canvas',
+    description: 'Learn how your data is protected with 256-bit SSL encryption on Topper Canvas.',
+    url: 'https://selfnotes99.github.io/privacy-policy',
+    siteName: 'SQL Mastery',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Privacy Policy | Topper Canvas',
+    description: 'Learn how your data is protected on Topper Canvas.',
+  },
 };
 
 export default function PrivacyPolicyPage() {

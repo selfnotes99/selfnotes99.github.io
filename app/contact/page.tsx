@@ -113,7 +113,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full text-sm px-3 py-2.5 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#7C2928]"
+                      className="w-full text-base sm:text-sm px-3 py-2.5 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#7C2928]"
                       placeholder="e.g. Priya Sharma"
                     />
                   </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full text-sm px-3 py-2.5 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#7C2928]"
+                      className="w-full text-base sm:text-sm px-3 py-2.5 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#7C2928]"
                       placeholder="e.g. name@example.com or phone"
                     />
                   </div>
@@ -141,7 +141,7 @@ export default function ContactPage() {
                       rows={3}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full text-sm px-3 py-2.5 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#7C2928]"
+                      className="w-full text-base sm:text-sm px-3 py-2.5 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#7C2928]"
                       placeholder="How can we help you?"
                     />
                   </div>

@@ -97,12 +97,13 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Mobile Right Controls */}
-        <div className="flex sm:hidden items-center gap-1.5">
+        <div className="flex sm:hidden items-center gap-2">
           <button
             onClick={onToggleEdition}
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-bold bg-white text-[#7C2928] border border-[#7C2928]/30 shadow-sm active:scale-95"
+            className="flex items-center gap-1 px-2.5 py-1.5 min-h-[36px] rounded-lg text-[11px] font-bold bg-white text-[#7C2928] border border-[#7C2928]/30 shadow-sm active:scale-95"
+            aria-label="Preview sample notes"
           >
-            <BookOpen className="w-3 h-3" />
+            <BookOpen className="w-3.5 h-3.5" />
             <span>Preview</span>
           </button>
 
@@ -110,15 +111,16 @@ export const Header: React.FC<HeaderProps> = ({
             href={BUY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-2.5 py-1.5 rounded-lg text-xs font-black bg-[#7C2928] text-white shadow-sm active:scale-95"
+            className="px-3 py-1.5 min-h-[36px] flex items-center justify-center rounded-lg text-xs font-black bg-[#7C2928] text-white shadow-sm active:scale-95"
+            aria-label="Buy SQL Ebook for 99 rupees"
           >
             ₹99
           </a>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-1.5 rounded-lg bg-[#521B18] text-white hover:bg-[#7C2928] transition-colors active:scale-95"
-            aria-label="Toggle menu"
+            className="p-2 min-w-[36px] min-h-[36px] flex items-center justify-center rounded-lg bg-[#521B18] text-white hover:bg-[#7C2928] transition-colors active:scale-95"
+            aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
@@ -128,13 +130,13 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#F7E5D3] border-b border-[#D49F7B] px-5 py-4 shadow-xl animate-fadeIn">
-          <nav className="flex flex-col gap-2.5 font-semibold text-[#1F1714]">
+          <nav className="flex flex-col gap-1.5 font-semibold text-[#1F1714]">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 px-3 rounded-lg hover:bg-white/80 text-[#1F1714] hover:text-[#7C2928] transition-all text-sm font-bold"
+                className="py-2.5 px-3 rounded-lg hover:bg-white/80 text-[#1F1714] hover:text-[#7C2928] transition-all text-sm font-bold min-h-[44px] flex items-center"
               >
                 {link.label}
               </a>

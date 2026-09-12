@@ -5,7 +5,22 @@ import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
   title: 'Terms & Conditions | Topper Canvas',
-  description: 'Terms of service, digital license agreement, and acceptable use policy for Topper Canvas study materials.'
+  description: 'Terms of service, digital license agreement, and acceptable use policy for Topper Canvas study materials.',
+  alternates: {
+    canonical: 'https://selfnotes99.github.io/terms',
+  },
+  openGraph: {
+    title: 'Terms & Conditions | Topper Canvas',
+    description: 'Terms of service and digital license agreement for study notes on Topper Canvas.',
+    url: 'https://selfnotes99.github.io/terms',
+    siteName: 'SQL Mastery',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Terms & Conditions | Topper Canvas',
+    description: 'Terms of service and license agreement for Topper Canvas study materials.',
+  },
 };
 
 export default function TermsPage() {

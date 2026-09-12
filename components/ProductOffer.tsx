@@ -60,7 +60,7 @@ export const ProductOffer: React.FC<ProductOfferProps> = ({
               </h3>
 
               {/* Price Row */}
-              <div className="flex items-baseline gap-3 mb-3">
+              <div className="flex items-baseline flex-wrap gap-2.5 sm:gap-3 mb-3">
                 <span className="text-xl sm:text-2xl line-through text-[#665348] font-medium">
                   ₹{edition.originalPrice.toLocaleString('en-IN')}.00
                 </span>

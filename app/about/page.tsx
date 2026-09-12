@@ -4,8 +4,23 @@ import Image from 'next/image';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Us | Topper Canvas',
-  description: 'Learn more about Topper Canvas, our mission to simplify education with visual smart notes, and our academic study kits.'
+  title: 'About Us | Topper Canvas - Smart Visual Notes',
+  description: 'Learn more about Topper Canvas, our mission to simplify education with visual smart notes, and our practical study kits.',
+  alternates: {
+    canonical: 'https://selfnotes99.github.io/about',
+  },
+  openGraph: {
+    title: 'About Us | Topper Canvas - Smart Visual Notes',
+    description: 'Learn more about Topper Canvas and our mission to simplify learning with visual study notes.',
+    url: 'https://selfnotes99.github.io/about',
+    siteName: 'SQL Mastery',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About Us | Topper Canvas',
+    description: 'Learn more about Topper Canvas and our mission to simplify learning with visual study notes.',
+  },
 };
 
 export default function AboutPage() {

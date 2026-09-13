@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import MicrosoftClarity from '@/components/MicrosoftClarity';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -192,6 +193,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className="antialiased min-h-screen flex flex-col font-sans bg-[#EBAF87] text-[#1F1714] overflow-x-hidden"
       >
+        <MicrosoftClarity />
         {children}
       </body>
     </html>

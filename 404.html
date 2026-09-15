@@ -8,9 +8,15 @@
   <script>
     (function () {
       var segments = window.location.pathname.split('/').filter(Boolean);
+      var knownPages = ['about', 'contact', 'terms', 'privacy-policy', 'refund-policy'];
       var target = '/';
-      if (segments.length > 0 && segments[0].toLowerCase() === 'xambuddy') {
-        target = '/xambuddy/';
+      if (segments.length > 0) {
+        var last = segments[segments.length - 1].toLowerCase();
+        if (knownPages.indexOf(last) !== -1) {
+          target = '/' + last + '.html';
+        } else if (segments[0].toLowerCase() === 'xambuddy') {
+          target = '/xambuddy/';
+        }
       }
       window.location.replace(target);
     })();

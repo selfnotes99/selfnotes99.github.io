@@ -2,6 +2,25 @@
 <html lang="en">
 
 <head>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2280534892790197');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2280534892790197&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta name="theme-color" content="#EBAF87" />
@@ -41,25 +60,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2280534892790197');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2280534892790197&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -141,6 +142,7 @@
   ]
   </script>
 </head>
+
 <body
   class="antialiased min-h-screen flex flex-col font-sans bg-[#EBAF87] text-[#1F1714] overflow-x-hidden selection:bg-[#7C2928] selection:text-white">
 
@@ -212,8 +214,7 @@
           <span>Preview Sample Notes</span>
         </button>
 
-        <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-          target="_blank" rel="noopener noreferrer"
+        <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
           class="flex items-center gap-2 bg-[#7C2928] hover:bg-[#521B18] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95">
           <i class="bi bi-bag-check text-base"></i>
           <span>Get SQL Ebook ₹99</span>
@@ -229,8 +230,7 @@
           <span>Preview</span>
         </button>
 
-        <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-          target="_blank" rel="noopener noreferrer"
+        <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
           class="px-3 py-1.5 min-h-[36px] flex items-center justify-center rounded-lg text-xs font-black bg-[#7C2928] text-white shadow-sm active:scale-95"
           aria-label="Buy SQL Ebook for 99 rupees">
           ₹99
@@ -271,8 +271,7 @@
             <span>Preview All 7 Sample Notes (Full-Screen)</span>
           </button>
 
-          <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-            target="_blank" rel="noopener noreferrer"
+          <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
             class="w-full flex items-center justify-center gap-2 bg-[#7C2928] text-white px-4 py-3 rounded-xl font-bold text-sm shadow-md active:scale-95">
             <i class="bi bi-bag-check text-sm"></i>
             <span>Get SQL Ebook ₹99</span>
@@ -322,8 +321,7 @@
           </div>
 
           <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
-            <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-              target="_blank" rel="noopener noreferrer"
+            <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
               class="w-full sm:w-auto text-center inline-flex items-center justify-center gap-3 bg-[#521B18] hover:bg-[#7C2928] text-white text-base sm:text-lg font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-200 hover:scale-105 active:scale-95">
               <span>Get SQL Ebook (₹99)</span>
               <i class="bi bi-arrow-right text-lg"></i>
@@ -425,7 +423,8 @@
                 <span class="text-amber-200">100% REAL NOTE</span>
               </div>
               <div class="relative w-full aspect-[1568/2400] rounded-lg overflow-hidden bg-neutral-50 shadow-inner">
-                <img src="assets/sql/05_sql_joins_concept.webp" alt="Complete original handwritten Unit 1: What is SQL? note sheet"
+                <img src="assets/sql/05_sql_joins_concept.webp"
+                  alt="Complete original handwritten Unit 1: What is SQL? note sheet"
                   class="w-full h-full object-contain object-top transition-transform duration-300 group-hover:scale-105"
                   loading="lazy" />
               </div>
@@ -497,8 +496,7 @@
 
             <!-- Buy Now CTA -->
             <div class="w-full space-y-4">
-              <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-                target="_blank" rel="noopener noreferrer"
+              <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
                 class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#7C2928] hover:bg-[#521B18] text-white text-lg font-bold px-10 py-4 rounded-xl shadow-lg transition-all duration-200 hover:scale-102 active:scale-98">
                 <i class="bi bi-lightning-charge-fill text-xl"></i>
                 <span>Buy Now (₹99)</span>
@@ -516,7 +514,8 @@
                 </div>
 
                 <!-- Fast Checkout Reassurance Badges -->
-                <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 pt-3 border-t border-[#D49F7B]/40 text-xs font-bold text-[#1F1714]">
+                <div
+                  class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 pt-3 border-t border-[#D49F7B]/40 text-xs font-bold text-[#1F1714]">
                   <div class="flex items-center gap-2">
                     <i class="bi bi-lightning-charge-fill text-amber-600 text-sm"></i>
                     <span>Instant UPI / Cards</span>
@@ -594,8 +593,7 @@
             </div>
 
             <div class="mt-8">
-              <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-                target="_blank" rel="noopener noreferrer"
+              <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 bg-[#7C2928] hover:bg-[#521B18] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-xl shadow-md transition-all hover:scale-105 active:scale-95">
                 Invest in Success Now (₹99)
               </a>
@@ -837,7 +835,8 @@
           class="sample-tab-btn shrink-0 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 flex items-center gap-2 shadow-sm bg-white/90 text-[#1F1714]">
           <i class="tab-icon bi bi-book text-sm text-[#7C2928]"></i>
           <span>Unit 1: What is SQL?</span>
-          <span class="tab-tag text-[10px] px-1.5 py-0.5 rounded-md bg-[#7C2928]/10 text-[#7C2928]">Core Foundation</span>
+          <span class="tab-tag text-[10px] px-1.5 py-0.5 rounded-md bg-[#7C2928]/10 text-[#7C2928]">Core
+            Foundation</span>
         </button>
         <button data-index="5"
           class="sample-tab-btn shrink-0 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 flex items-center gap-2 shadow-sm bg-white/90 text-[#1F1714]">
@@ -849,7 +848,8 @@
           class="sample-tab-btn shrink-0 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 flex items-center gap-2 shadow-sm bg-white/90 text-[#1F1714]">
           <i class="tab-icon bi bi-book text-sm text-[#7C2928]"></i>
           <span>Unit 14: LEFT OUTER JOIN</span>
-          <span class="tab-tag text-[10px] px-1.5 py-0.5 rounded-md bg-[#7C2928]/10 text-[#7C2928]">Anti-Join Pattern</span>
+          <span class="tab-tag text-[10px] px-1.5 py-0.5 rounded-md bg-[#7C2928]/10 text-[#7C2928]">Anti-Join
+            Pattern</span>
         </button>
       </div>
 
@@ -915,8 +915,7 @@
             </div>
 
             <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
-              <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-                target="_blank" rel="noopener noreferrer"
+              <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#7C2928] hover:bg-[#521B18] text-white font-extrabold text-sm sm:text-base px-7 py-3.5 rounded-xl shadow-lg transition-all hover:scale-105 active:scale-95">
                 <i class="bi bi-download text-sm"></i>
                 <span>Get Complete Ebook (₹99)</span>
@@ -1021,7 +1020,8 @@
               title="Unit 13: Advanced INSERT Patterns">
               <div
                 class="relative w-full aspect-[1568/2200] rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200">
-                <img src="assets/sql/03_core_concepts_constraints.webp" alt="Sheet 3 - Unit 13: Advanced INSERT Patterns"
+                <img src="assets/sql/03_core_concepts_constraints.webp"
+                  alt="Sheet 3 - Unit 13: Advanced INSERT Patterns"
                   class="w-full h-full object-contain object-top transition-transform duration-300 group-hover:scale-108"
                   loading="lazy" />
                 <div
@@ -1329,7 +1329,8 @@
   <section id="reviews" class="bg-[#EBAF87] py-14 sm:py-20 relative">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 bg-[#7C2928] text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-md mb-4 uppercase tracking-wider">
+        <div
+          class="inline-flex items-center gap-2 bg-[#7C2928] text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-md mb-4 uppercase tracking-wider">
           <i class="bi bi-star-fill text-amber-300"></i>
           <span>Verified Student Feedback</span>
         </div>
@@ -1343,7 +1344,8 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         <!-- Review Card 1 -->
-        <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-[#E2BEA2]/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div
+          class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-[#E2BEA2]/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
           <div>
             <div class="flex items-center justify-between gap-2 mb-4">
               <div class="flex items-center gap-1 text-amber-500 text-lg">
@@ -1353,16 +1355,19 @@
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </div>
-              <span class="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <span
+                class="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                 <i class="bi bi-patch-check-fill text-emerald-600"></i> Verified Buyer
               </span>
             </div>
             <p class="text-sm sm:text-base text-[#2D201A] font-semibold leading-relaxed mb-6 italic">
-              &ldquo;The visual explanation of SQL JOINs and query execution order in this ebook is incredible. Concepts that 10 YouTube videos couldn't clarify were crystal clear in 5 minutes.&rdquo;
+              &ldquo;The visual explanation of SQL JOINs and query execution order in this ebook is incredible. Concepts
+              that 10 YouTube videos couldn't clarify were crystal clear in 5 minutes.&rdquo;
             </p>
           </div>
           <div class="flex items-center gap-3.5 pt-4 border-t border-neutral-100">
-            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#7C2928] bg-neutral-100 shrink-0 shadow-md">
+            <div
+              class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#7C2928] bg-neutral-100 shrink-0 shadow-md">
               <img src="assets/testimonial_diya.png" alt="Diya Gupta" class="w-full h-full object-cover" />
             </div>
             <div>
@@ -1373,7 +1378,8 @@
         </div>
 
         <!-- Review Card 2 -->
-        <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-[#E2BEA2]/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div
+          class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-[#E2BEA2]/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
           <div>
             <div class="flex items-center justify-between gap-2 mb-4">
               <div class="flex items-center gap-1 text-amber-500 text-lg">
@@ -1383,16 +1389,19 @@
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
               </div>
-              <span class="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <span
+                class="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                 <i class="bi bi-patch-check-fill text-emerald-600"></i> Verified Buyer
               </span>
             </div>
             <p class="text-sm sm:text-base text-[#2D201A] font-semibold leading-relaxed mb-6 italic">
-              &ldquo;I was struggling with WHERE vs HAVING and PRIMARY vs FOREIGN KEY constraints. This ebook simplified everything with real-world examples and diagrams. Best ₹99 investment!&rdquo;
+              &ldquo;I was struggling with WHERE vs HAVING and PRIMARY vs FOREIGN KEY constraints. This ebook simplified
+              everything with real-world examples and diagrams. Best ₹99 investment!&rdquo;
             </p>
           </div>
           <div class="flex items-center gap-3.5 pt-4 border-t border-neutral-100">
-            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#7C2928] bg-neutral-100 shrink-0 shadow-md">
+            <div
+              class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#7C2928] bg-neutral-100 shrink-0 shadow-md">
               <img src="assets/testimonial_rohit.png" alt="Aman Sharma" class="w-full h-full object-cover" />
             </div>
             <div>
@@ -1538,8 +1547,7 @@
           </span>
         </div>
 
-        <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-          target="_blank" rel="noopener noreferrer"
+        <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center gap-3 bg-[#E5A835] hover:bg-[#F59E0B] text-[#1F1714] font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all duration-200 hover:scale-105 active:scale-95">
           <i class="bi bi-bag-check text-xl"></i>
           <span>Get Notes Now (₹99)</span>
@@ -1601,8 +1609,7 @@
       </div>
     </div>
 
-    <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-      target="_blank" rel="noopener noreferrer"
+    <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
       class="flex items-center gap-2 bg-[#E5A835] hover:bg-[#F59E0B] text-[#1F1714] font-black text-sm px-5 py-2.5 rounded-xl shadow-md active:scale-95 transition-all">
       <i class="bi bi-lightning-charge-fill"></i>
       <span>Buy Now (₹99)</span>
@@ -1709,8 +1716,8 @@
             class="px-3.5 sm:px-4 py-2 min-h-[38px] rounded-xl text-xs sm:text-sm font-bold text-[#4A392F] hover:bg-neutral-100 active:bg-neutral-200 transition-colors">
             Close
           </button>
-          <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708"
-            target="_blank" rel="noopener noreferrer" onclick="closeSqlModal()"
+          <a href="https://superprofile.bio/vp/6aa90df8ecf1df0013c2c708" target="_blank" rel="noopener noreferrer"
+            onclick="closeSqlModal()"
             class="flex-1 sm:flex-initial text-center bg-[#7C2928] hover:bg-[#521B18] text-white px-4 sm:px-5 py-2 min-h-[38px] flex items-center justify-center rounded-xl text-xs sm:text-sm font-bold shadow transition-all hover:scale-105 active:scale-95">
             <span>Get Full Ebook (₹99)</span>
           </a>
@@ -1719,7 +1726,25 @@
 
     </div>
   </div>
-
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2280534892790197');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2280534892790197&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
